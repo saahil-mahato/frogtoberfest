@@ -85,7 +85,7 @@ class PullRequests extends Component {
       const username = this.props.username;
       const userInfo = await fetchUserInfo(username);
 
-      !userInfo.membershipStatus ? this.showNotAMemberMessage() : this.displayPullRequests(userInfo);
+      this.displayPullRequests(userInfo);
     } catch (error) {
       this.setState({
         error,
