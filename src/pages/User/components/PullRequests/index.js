@@ -91,7 +91,8 @@ class PullRequests extends Component {
         error,
         loading: false,
         data: null,
-        userDetail: null
+        userDetail: null,
+        isOrgMember: true
       });
     }
   };
@@ -228,14 +229,16 @@ class PullRequests extends Component {
    */
   render = () => {
     const username = this.props.username;
-    const { loading, data, error, userDetail } = this.state;
+    const { loading, data, error, userDetail, isOrgMember } = this.state;
 
     if (loading) {
       return <LoadingIcon />;
     }
-    if (!this.state.isOrgMember) {
+
+    if (!isOrgMember) {
       return <ErrorText errorMessage={this.getNotAMemberMessage()} />;
     }
+
     if (error || data.errors || data.message) {
       return <ErrorText errorMessage={this.getErrorMessage()} />;
     }
