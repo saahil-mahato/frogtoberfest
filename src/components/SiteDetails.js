@@ -16,8 +16,8 @@ const SiteDetails = () => (
       <div className="px-6 py-4">
         <div className="font-bold mb-4">
           <p className="mb-4 leading-normal text-lg mb-1">
-            Frogtoberfest is a spin-off of Hacktoberfest; a month-long Open Source contribution challenge for
-            Leapfroggers.
+            Frogtoberfest is a spin-off of Hacktoberfest; a month-long Open Source contribution challenge for open
+            source enthusiast.
           </p>
         </div>
         <ul className="p-0">
