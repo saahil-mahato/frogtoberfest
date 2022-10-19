@@ -25,6 +25,7 @@
     "prettier:fix": "prettier --write \"{src,api,public}/**/*.{js,jsx,html,css,md,yml,yml,json}\" --loglevel warn"
   },
   "dependencies": {
+    "dayjs": "^1.11.5",
     "prop-types": "^15.6.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
