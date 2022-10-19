@@ -1,8 +1,8 @@
 import React from 'react';
 
 const checklistItems = [
-  'Create 6 pull requests (PRs) between Oct 1-31.',
-  'At least 4 PRs should be in repositories not owned by you.',
+  'Create 6 pull requests (PRs) between Oct 1 - Nov 7.',
+  'At least 3 PRs should be in repositories not owned by you.',
   'PRs can be made to any public repository on GitHub.',
   'PRs should not be labeled as `invalid`.'
 ];
