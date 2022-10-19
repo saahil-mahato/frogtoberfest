@@ -43,6 +43,15 @@ h1 {
   color: #a52607;
 }
 
+.frogtoberfest-logo {
+  width: 322px;
+  height: auto;
+}
+
+.bg-dark-black {
+  background-color: #000000;
+}
+
 .bg-deep-cove {
   background: #061244;
 }
