@@ -2,13 +2,9 @@
 <p align="center">Web app to track your progress for Frogtoberfest.</p>
 <p align="center">:point_right: <a href="https://frogtoberfest.lftechnology.com">https://frogtoberfest.lftechnology.com</a></p>
 
-## CI Status
-
-[![CircleCI](https://circleci.com/gh/leapfrogtechnology/frogtoberfest/tree/master.svg?style=svg)](https://circleci.com/gh/leapfrogtechnology/frogtoberfest/tree/master)
-
 ## Requirements
 
-- Node v8+
+- Node v16+
 
 ## Running the App
 
