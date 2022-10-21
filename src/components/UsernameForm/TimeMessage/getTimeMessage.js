@@ -1,7 +1,11 @@
+import dayjs from 'dayjs';
+
 const getTimeMessage = () => {
   const today = new Date();
   const currentMonth = today.getMonth();
-  const daysLeft = 31 - today.getDate();
+
+  const november8 = dayjs(`${today.getFullYear()}-11-08`);
+  const daysLeft = november8.diff(today, 'day');
 
   if (currentMonth < 9) {
     const currentYear = today.getFullYear();
@@ -9,7 +13,7 @@ const getTimeMessage = () => {
     return `Stay tuned for frogtoberfest ${currentYear} !!`;
   }
 
-  if (currentMonth > 9) {
+  if (november8.isBefore(today)) {
     return `Thank you for your participation. Stay tuned for Next Year !!`;
   }
 
