@@ -22,7 +22,8 @@
     "lint": "yarn prettier && yarn eslint",
     "lint:fix": "yarn prettier:fix && yarn eslint:fix",
     "prettier": "prettier --list-different \"{src,api,public}/**/*.{js,jsx,html,css,md,yml,yml,json}\" --loglevel warn",
-    "prettier:fix": "prettier --write \"{src,api,public}/**/*.{js,jsx,html,css,md,yml,yml,json}\" --loglevel warn"
+    "prettier:fix": "prettier --write \"{src,api,public}/**/*.{js,jsx,html,css,md,yml,yml,json}\" --loglevel warn",
+    "scss": "sass --watch ./src/assets/scss:./src/assets/css"
   },
   "dependencies": {
     "dayjs": "^1.11.5",
