@@ -1,6 +1,4 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
-
 
 import Icon1 from 'assets/images/icon-1.svg';
 import Icon2 from 'assets/images/icon-2.svg';
