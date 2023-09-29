@@ -604,7 +604,7 @@ const Home = () => {
                 </figure>
 
                 <div className='mt-9x initiatives'>
-                  <p>Initiatives of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
+                  <p>Initiative of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
                 </div>
               </div>
             </div>
@@ -634,7 +634,7 @@ const Home = () => {
                   <img src={Logo} alt="Frogtoberfest Logo" />
                 </figure>
                 <div className='mt-9x initiatives initiatives--mobile-view'>
-                  <p>Initiatives of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
+                  <p>Initiative of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
                 </div>
                
               </div>
