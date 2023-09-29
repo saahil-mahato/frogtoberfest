@@ -1,4 +1,4 @@
-<h1 align="center">Frogtoberfest Checker</h1>
+<h1 align="center">Frogtoberfest</h1>
 <p align="center">Web app to track your progress for Frogtoberfest.</p>
 <p align="center">:point_right: <a href="https://frogtoberfest.lftechnology.com">https://frogtoberfest.lftechnology.com</a></p>
 

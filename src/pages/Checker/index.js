@@ -6,14 +6,14 @@ import UsernameForm from 'components/UsernameForm';
 import SiteHeader from 'components/SiteHeader';
 
 const Checker = () => (
-  <Fragment> 
-      <SiteHeader />
-      <div className='banner banner--img-fixed'>
-      <SiteTitle>Frogtoberfest Checker</SiteTitle>
+  <Fragment>
+    <SiteHeader />
+    <div className='banner banner--img-fixed'>
+      <SiteTitle>Frogtoberfest</SiteTitle>
       <UsernameForm />
       <SiteDetails />
-      </div>
-    
+    </div>
+
 
   </Fragment>
 );

@@ -160,10 +160,10 @@ const Home = () => {
         <section className="banner pt-10x text-center text-lg-left">
           <div className="container">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between lg:items-center">
-            <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
+              <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
                 <img src={Img1} alt="Remaining Days" />
 
-         
+
               </div>
               <div className="order-2 order-lg-1">
                 <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>5</span>
@@ -174,43 +174,39 @@ const Home = () => {
 
                 <div className='d-flex flex-col justify-center md:items-center mb-10x timer'>
 
-                <div className="mb-2x text-center text-sm">Remaining</div>
-                <div className="d-flex gap-6x text-center">
-                  <div className="">
-                    <div className="days d-flex gap-1x">
-                      <span className='number' id='day-1'>{day1Element}</span>
-                      <span className='number' id='day-2'>{day2Element}</span>
+                  <div className="mb-2x text-center text-sm">Remaining</div>
+                  <div className="d-flex gap-6x text-center">
+                    <div className="">
+                      <div className="days d-flex gap-1x">
+                        <span className='number' id='day-1'>{day1Element}</span>
+                        <span className='number' id='day-2'>{day2Element}</span>
+                      </div>
+                      <div className="time-label">days</div>
                     </div>
-                    <div className="time-label">days</div>
-                  </div>
 
-                  <div className="hours-container">
-                    <div className="hours d-flex gap-1x">
-                      <span className='number' id='hour-1'>{hour1Element}</span>
-                      <span className='number' id='hour-2'>{hour2Element}</span>
+                    <div className="hours-container">
+                      <div className="hours d-flex gap-1x">
+                        <span className='number' id='hour-1'>{hour1Element}</span>
+                        <span className='number' id='hour-2'>{hour2Element}</span>
+                      </div>
+                      <div className="time-label">hours</div>
                     </div>
-                    <div className="time-label">hours</div>
-                  </div>
 
-                  <div className="minutes-container">
-                    <div className="minutes d-flex gap-1x">
-                      <span className='number' id='minute-1'>{minute1Element}</span>
-                      <span className='number' id='minute-2'>{minute2Element}</span>
+                    <div className="minutes-container">
+                      <div className="minutes d-flex gap-1x">
+                        <span className='number' id='minute-1'>{minute1Element}</span>
+                        <span className='number' id='minute-2'>{minute2Element}</span>
+                      </div>
+                      <div className="time-label">minutes</div>
                     </div>
-                    <div className="time-label">minutes</div>
                   </div>
                 </div>
-                </div>
-
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
-                  <button className='btn btn-primary'><a className='text-black' href="#participation">Participate</a></button>
-                  <button className='btn btn-outlined'><Link className='text-white' to="https://frogtoberfest-leaderboard.lftechnology.com/">Leaderboard</Link></button>
+                  <button className='btn btn-primary'><a className='text-black' href="https://frog.ly/frogtoberfest2023" target='_blank' rel="noopener noreferrer">Participate</a></button>
+                  <button className='btn btn-link'><Link className='text-white' to="https://frogtoberfest-leaderboard.lftechnology.com/">Leaderboard</Link></button>
                 </div>
               </div>
-
-
-
 
             </div>
           </div>
@@ -489,7 +485,7 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x">
-                  You have to fill up the registration form to be a verified participant for this challenge. In case you’ve not filled the form, you will not be included in the official leaderboard. As such, you not be eligible for the SWAG even if you pass the given criteria.</p>
+                  You have to fill up the registration form to be a verified participant for this challenge. In case you’ve not filled the form, you will not be included in the official leaderboard. As such, you you will not be eligible for the SWAG even if you pass the given criteria.</p>
               </div>
 
               <div className="accordion-content">
@@ -571,22 +567,22 @@ const Home = () => {
       </main>
 
       <div className='antenna'>
-      <svg width="130" height="41" viewBox="0 0 130 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" stroke-width="3.0009"/>
-      <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" stroke-width="3.0009"/>
-      <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" stroke-width="3.0009"/>
-      <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" stroke-width="3.0009"/>
-      <defs>
-      <linearGradient id="paint0_linear_1945_76" x1="5.78414" y1="0" x2="5.78414" y2="11.5683" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F2CC25"/>
-      <stop offset="1" stop-color="#B8732D"/>
-      </linearGradient>
-      <linearGradient id="paint1_linear_1945_76" x1="9.34859" y1="3" x2="9.34859" y2="14.5683" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F2CC25"/>
-      <stop offset="1" stop-color="#B8732D"/>
-      </linearGradient>
-      </defs>
-      </svg>
+        <svg width="130" height="41" viewBox="0 0 130 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" stroke-width="3.0009" />
+          <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
+          <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" stroke-width="3.0009" />
+          <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
+          <defs>
+            <linearGradient id="paint0_linear_1945_76" x1="5.78414" y1="0" x2="5.78414" y2="11.5683" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F2CC25" />
+              <stop offset="1" stop-color="#B8732D" />
+            </linearGradient>
+            <linearGradient id="paint1_linear_1945_76" x1="9.34859" y1="3" x2="9.34859" y2="14.5683" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F2CC25" />
+              <stop offset="1" stop-color="#B8732D" />
+            </linearGradient>
+          </defs>
+        </svg>
 
 
       </div>
@@ -611,9 +607,9 @@ const Home = () => {
             <div className="col-12 col-md-6 col-xl-5">
               <div className="">
                 <div className="ml-form-embed"
-                data-account="738785:d6l2h0j5t4"
-                data-form="5983064:r5a2f4">
-              </div>
+                  data-account="738785:d6l2h0j5t4"
+                  data-form="5983064:r5a2f4">
+                </div>
                 {/* <form className='form-subscribe mb-10x' action="">
                   <input className='form-control' type="email" placeholder='Enter you email here' />
                   <input className='form-submit' type="submit" value="Subscribe" />
