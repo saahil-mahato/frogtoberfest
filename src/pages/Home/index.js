@@ -127,7 +127,7 @@ const Home = () => {
     countDownClock(dif, 'seconds');
 
 
-  });
+  }, []);
 
   useEffect(() => {
     // Create a new script element
@@ -152,7 +152,7 @@ const Home = () => {
     return () => {
       document.head.removeChild(script);
     };
-  });
+  }, []);
 
   return (
     <Fragment>
@@ -451,7 +451,18 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x mb-">
-                  Yes
+                  Yes, we encourage freshers as well as experts to participate in Frogtoberfest.
+                </p>
+              </div>
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    Are there any particular programming languages that are preferred?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x mb-">
+                  Feel free to use any programming language of your choice.
                 </p>
               </div>
               <div className="accordion-content">
@@ -462,7 +473,7 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x mb-">
-                  During Frogtoberfest, you have the flexibility to work on a wide range of projects. PRs can be made to any public repository on GitHub, allowing you to contribute to various open-source initiatives, from software development and documentation improvements to bug fixes and feature enhancements. Your options are virtually limitless, so you can choose projects that align with your interests, skills, and goals to make a meaningful impact in the open-source community.
+                  You have the flexibility to work on a wide range of projects. PRs can be made to any public repository on GitHub, allowing you to contribute to various open-source initiatives, from software development and documentation improvements to bug fixes and feature enhancements. Choose projects that align with your interests, skills, and goals to make a meaningful impact in the open-source community.
                 </p>
               </div>
               <div className="accordion-content">
@@ -473,8 +484,7 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x">
-                  In October 2023, the objective is to create 8 pull requests (PRs) on GitHub. At least 5 of these PRs should target repositories not owned by you, and they must be in public repositories. Ensure that all PRs are valid and adhere to repository guidelines, contributing positively to the open-source community.
-                </p>
+                  You have to fill up the registration form to be a verified participant for this challenge. In case you’ve not filled the form, you will not be included in the official leaderboard. As such, you not be eligible for the SWAG even if you pass the given criteria.</p>
               </div>
 
               <div className="accordion-content">
@@ -485,7 +495,7 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x">
-                  Our leaderboard which can be accessed from the website.
+                  Check the leaderboard for your progress and top contributors. It can be accessed via official Frogtoberfest website.
                 </p>
               </div>
               <div className="accordion-content">
@@ -497,7 +507,7 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x">
-                  Any contribution is accepted.
+                  Any contribution is accepted as long as they’re valid and pass the criteria.
                 </p>
               </div>
               <div className="accordion-content">
@@ -508,8 +518,47 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x">
-                  The judging criteria for Frogtoberfest are primarily based on active contributions to the event. Participants who meet the above-mentioned criteria, including creating 8 pull requests on GitHub between October 1 and October 31, 2023, with at least 5 targeting repositories not owned by them and ensuring that all PRs are valid, will be considered. The top 15 contributors who fulfill these requirements will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
+                  The judging criteria for Frogtober are primarily based on active contributions to the event.
+                  <ol className='pl-10'>
+                    <li>Create 8 pull requests on GitHub between October 1 and October 31, 2023</li>
+                    <li>At least 5 pull requests should be in repositories not owned by you</li>
+                    <li>Ensure all PRs are valid.</li>
+                  </ol>
+
+                  Note: The top 15 contributors who fulfill these requirements will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
                 </p>
+              </div>
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    How do I win Frogtoberfest merch?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x">
+                  The top 15 contributors and 10 Leapfroggers in the leaderboard who fulfill the criteria will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
+                </p>
+              </div>
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    Will my contributions to Hacktoberfest also count as Frogtoberfest contributions?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x">
+                  Yes!
+                </p>
+              </div>
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    When and how I can attend this fest?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x">
+                  Frogtoberfest challenge starts every year on October 1 and end on October 31.</p>
               </div>
             </div>
           </div>
