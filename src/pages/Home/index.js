@@ -204,7 +204,7 @@ const Home = () => {
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
                   <button className='btn btn-primary'><a className='text-black' href="https://frog.ly/frogtoberfest2023" target='_blank' rel="noopener noreferrer">Participate</a></button>
-                  <button className='btn btn-link'><Link className='text-white' to="https://frogtoberfest-leaderboard.lftechnology.com/">Leaderboard</Link></button>
+                  <button className='btn btn-link'><a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer">Leaderboard</a></button>
                 </div>
               </div>
 
@@ -636,7 +636,7 @@ const Home = () => {
                 <div className='mt-9x initiatives initiatives--mobile-view'>
                   <p>Initiative of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
                 </div>
-               
+
               </div>
             </div>
           </div>
