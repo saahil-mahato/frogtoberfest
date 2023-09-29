@@ -115,3 +115,15 @@ ul {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
   }
+
+  .timer{
+	max-width: 393px;
+	@include mqmax('lg'){
+		max-width: 100%;
+	}
+  }
+
+  .img-sm{
+	max-width:382px;
+  }
+
