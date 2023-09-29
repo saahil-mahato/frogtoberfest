@@ -50,7 +50,7 @@ const Home = () => {
           return timer(number * 60 * 60);
         case 'days':
           return timer(number * 60 * 60 * 24);
-          default:
+        default:
       }
     }
 
@@ -161,7 +161,7 @@ const Home = () => {
         <section className="banner pt-10x text-center text-lg-left">
           <div className="container">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
-            <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
+              <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
                 <img src={Img1} alt="Remaining Days" />
 
                 <div className="mb-2x text-center text-sm">Remaining</div>
@@ -517,7 +517,7 @@ const Home = () => {
       </main>
 
       <div className='antenna'>
-        <img src={Antenna} alt='Antenna'/>
+        <img src={Antenna} alt='Antenna' />
       </div>
 
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
@@ -554,7 +554,7 @@ const Home = () => {
                     <li><a href="https://www.facebook.com/lftechnology?mibextid=LQQJ4d" target='_blank' rel="noopener noreferrer">
                       <i className="fa-brands fa-facebook"></i>
                     </a></li>
-                    <li><a href="https://x.com/lftechnology?s=21" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://x.com/lftechnology?s=21" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="https://instagram.com/lftechnology?igshid=MzRlODBiNWFlZA==" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-instagram"></i></a></li>
                   </ul>
                 </div>
@@ -574,4 +574,3 @@ const Home = () => {
 };
 
 export default Home;
- 
