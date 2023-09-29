@@ -32,6 +32,7 @@ const SiteHeader = () => {
                 header.classList.remove('sticky');
             }
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

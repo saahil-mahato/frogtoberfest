@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+0import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 import Icon1 from 'assets/images/icon-1.svg';
@@ -125,8 +125,7 @@ const Home = () => {
     }
 
     countDownClock(dif, 'seconds');
-
-
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -152,6 +151,7 @@ const Home = () => {
     return () => {
       document.head.removeChild(script);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
