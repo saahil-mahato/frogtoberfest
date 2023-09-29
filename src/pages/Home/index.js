@@ -1,4 +1,4 @@
-import React,{ Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
@@ -23,18 +23,19 @@ import Logo from 'assets/images/logo.svg';
 import SiteHeader from 'components/SiteHeader';
 
 const Home = () => {
+  const [day1Element, setDay1Element] = useState(0)
+  const [day2Element, setDay2Element] = useState(0)
+  const [hour1Element, setHour1Element] = useState(0)
+  const [hour2Element, setHour2Element] = useState(0)
+  const [minute1Element, setMinute1Element] = useState(0)
+  const [minute2Element, setMinute2Element] = useState(0)
+  const SECOND_DAY = 86400
+  const SECOND_HOUR = 3600
   const lastDate = new Date('2023-10-01');
   const todayDate = new Date();
   const dif = Math.abs(lastDate - todayDate) / 1000;
 
   const countDownClock = (number = 100, format = 'seconds') => {
-    const d = document;
-    const days1Element = d.querySelector('#day-1');
-    const days2Element = d.querySelector('#day-2');
-    const hour1Element = d.querySelector('#hour-1');
-    const hour2Element = d.querySelector('#hour-2');
-    const minute1Element = d.querySelector('#minute-1');
-    const minute2Element = d.querySelector('#minute-2');
     let countdown;
 
     convertFormat(format);
@@ -75,16 +76,16 @@ const Home = () => {
     }
 
     function displayTimeLeft(seconds) {
-      const totalDaysRemaining = Math.floor(seconds / 86400);
-      const totalHourRemaing = Math.floor((seconds % 86400) / 3600);
-      const totalMinuteRemaing = Math.floor(((seconds % 86400) % 3600) / 60);
+      const totalDaysRemaining = Math.floor(seconds / SECOND_DAY);
+      const totalHourRemaing = Math.floor((seconds % SECOND_DAY) / SECOND_HOUR);
+      const totalMinuteRemaing = Math.floor(((seconds % SECOND_DAY) % SECOND_HOUR) / 60);
 
-      days1Element.textContent = Math.floor(totalDaysRemaining / 10);
-      days2Element.textContent = totalDaysRemaining % 10;
-      hour1Element.textContent = Math.floor(totalHourRemaing / 10);
-      hour2Element.textContent = totalHourRemaing % 10;
-      minute1Element.textContent = Math.floor(totalMinuteRemaing / 10);
-      minute2Element.textContent = totalMinuteRemaing % 10;
+      setDay1Element(Math.floor(totalDaysRemaining / 10))
+      setDay2Element(totalDaysRemaining % 10)
+      setHour1Element(Math.floor(totalHourRemaing / 10))
+      setHour2Element(totalHourRemaing % 10)
+      setMinute1Element(Math.floor(totalMinuteRemaing / 10))
+      setMinute2Element(totalMinuteRemaing % 10)
     }
   };
 
@@ -112,7 +113,7 @@ const Home = () => {
 
     function removeOpenedContent(index) {
       accordionContent.forEach((item2, index2) => {
-        if (index != index2) {
+        if (index !== index2) {
           item2.classList.remove('is-open');
           const descrip = item2.querySelector('.accordion-content-description');
 
@@ -159,31 +160,31 @@ const Home = () => {
         <section className="banner pt-10x text-center text-lg-left">
           <div className="container">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
-            <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
+              <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
                 <img src={Img1} alt="" />
 
                 <div className="mb-2x text-center text-sm">Remaining</div>
                 <div className="d-flex gap-6x text-center">
                   <div className="">
                     <div className="days d-flex gap-1x">
-                      <span className='number' id='day-1'></span>
-                      <span className='number' id='day-2'></span>
+                      <span className='number' id='day-1'>{day1Element}</span>
+                      <span className='number' id='day-2'>{day2Element}</span>
                     </div>
                     <div className="time-label">days</div>
                   </div>
 
                   <div className="hours-container">
                     <div className="hours d-flex gap-1x">
-                      <span className='number' id='hour-1'></span>
-                      <span className='number' id='hour-2'></span>
+                      <span className='number' id='hour-1'>{hour1Element}</span>
+                      <span className='number' id='hour-2'>{hour2Element}</span>
                     </div>
                     <div className="time-label">hours</div>
                   </div>
 
                   <div className="minutes-container">
                     <div className="minutes d-flex gap-1x">
-                      <span className='number' id='minute-1'></span>
-                      <span className='number' id='minute-2'></span>
+                      <span className='number' id='minute-1'>{minute1Element}</span>
+                      <span className='number' id='minute-2'>{minute2Element}</span>
                     </div>
                     <div className="time-label">minutes</div>
                   </div>
@@ -202,7 +203,7 @@ const Home = () => {
                 </div>
               </div>
 
-          
+
 
 
             </div>
@@ -326,8 +327,8 @@ const Home = () => {
                       <div className="col-6">
                         <div
                           className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">40</div>
-                          <div className="white-space-nowrap font-chakra">Participants</div>
+                          <div className="text-xl font-chakra">5</div>
+                          <div className="white-space-nowrap font-chakra">Events</div>
                         </div>
                       </div>
                     </div>
@@ -429,6 +430,29 @@ const Home = () => {
             <h2 className='mb-8x'>FAQs</h2>
 
             <div className="accordion">
+
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    What is the purpose of Frogtoberfest?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x mb-">
+                  Foster the open source contribution culture.
+                </p>
+              </div>
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    Can a beginner participate in Frogtoberfest?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x mb-">
+                  Yes
+                </p>
+              </div>
               <div className="accordion-content">
                 <header className='d-flex gap-5x'>
                   <span className="accordion-content-title">
@@ -451,6 +475,30 @@ const Home = () => {
                   In October 2023, the objective is to create 8 pull requests (PRs) on GitHub. At least 5 of these PRs should target repositories not owned by you, and they must be in public repositories. Ensure that all PRs are valid and adhere to repository guidelines, contributing positively to the open-source community.
                 </p>
               </div>
+
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    How can I see my progress?
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x">
+                  Our leaderboard which can be accessed from the website.
+                </p>
+              </div>
+              <div className="accordion-content">
+                <header className='d-flex gap-5x'>
+                  <span className="accordion-content-title">
+                    Do I only have to contribute to the company's open-source projects or can I contribute in other projects too?
+
+                  </span>
+                  <i className="icon fa-solid fa-plus ml-auto"></i>
+                </header>
+                <p className="accordion-content-description mr-lg-15x">
+                  Any contribution is accepted.
+                </p>
+              </div>
               <div className="accordion-content">
                 <header className='d-flex gap-5x'>
                   <span className="accordion-content-title">
@@ -468,7 +516,7 @@ const Home = () => {
       </main>
 
       <div className='antenna'>
-        <img src={Antenna}/>
+        <img src={Antenna} />
       </div>
 
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
@@ -490,7 +538,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-6 col-xl-5">
               <div className="">
-              {/* <div class="ml-form-embed"
+                {/* <div class="ml-form-embed"
                 data-account="738785:d6l2h0j5t4"
                 data-form="5983064:r5a2f4">
               </div> */}
