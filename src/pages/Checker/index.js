@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
 
 import SiteTitle from 'components/SiteTitle';
 import SiteDetails from 'components/SiteDetails';

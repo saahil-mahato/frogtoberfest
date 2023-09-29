@@ -1,9 +1,5 @@
 import React, { Fragment, Component } from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-
-import Logo from 'assets/images/logo.svg';
 import SiteTitle from 'components/SiteTitle';
 import UsernameForm from 'components/UsernameForm';
 import PullRequests from './components/PullRequests';

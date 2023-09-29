@@ -49,6 +49,7 @@ const Home = () => {
           return timer(number * 60 * 60);
         case 'days':
           return timer(number * 60 * 60 * 24);
+          default:
       }
     }
 
@@ -112,7 +113,7 @@ const Home = () => {
 
     function removeOpenedContent(index) {
       accordionContent.forEach((item2, index2) => {
-        if (index != index2) {
+        if (index !== index2) {
           item2.classList.remove('is-open');
           const descrip = item2.querySelector('.accordion-content-description');
 
@@ -125,7 +126,7 @@ const Home = () => {
     countDownClock(dif, 'seconds');
 
 
-  }, []);
+  });
 
   useEffect(() => {
     // Create a new script element
@@ -150,7 +151,7 @@ const Home = () => {
     return () => {
       document.head.removeChild(script);
     };
-  }, []);
+  });
 
   return (
     <Fragment>
@@ -160,7 +161,7 @@ const Home = () => {
           <div className="container">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
             <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
-                <img src={Img1} alt="" />
+                <img src={Img1} alt="Remaining Days" />
 
                 <div className="mb-2x text-center text-sm">Remaining</div>
                 <div className="d-flex gap-6x text-center">
@@ -217,7 +218,7 @@ const Home = () => {
               <div className="row gutter-y-12x gutter-y-lg-0x">
                 <div className="col-12 col-md-4">
                   <figure>
-                    <img className='mb-4x' src={Icon1} alt="" />
+                    <img className='mb-4x' src={Icon1} alt="Open Source Hackathon for Leapfroggers and LeapNetwork" />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
                       <h3 className='mb-2x font-figtree color-white--base text-lg'>Who</h3>
                       <p>Open Source Hackathon for Leapfroggers and LeapNetwork</p>
@@ -227,7 +228,7 @@ const Home = () => {
 
                 <div className="col-12 col-md-4">
                   <figure>
-                    <img className='mb-4x' src={Icon2} alt="" />
+                    <img className='mb-4x' src={Icon2} alt="Create 8 pull requests (PR)" />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
                       <h3 className='mb-2x font-figtree color-white--base text-lg'>How</h3>
                       <p>Create 8 pull requests (PR)</p>
@@ -237,7 +238,7 @@ const Home = () => {
 
                 <div className="col-12 col-md-4">
                   <figure>
-                    <img className='mb-4x' src={Icon3} alt="" />
+                    <img className='mb-4x' src={Icon3} alt="Any time between Oct 1 to Oct 31, 2023." />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
                       <h3 className='mb-2x font-figtree color-white--base text-lg'>When</h3>
                       <p>Any time between Oct 1 to Oct 31, 2023.</p>
@@ -257,28 +258,28 @@ const Home = () => {
             <div className="row gutter-y-6x gutter-x-lg-13x">
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
-                  <img className='mb-md-6x' src={Icon4} alt="" />
+                  <img className='mb-md-6x' src={Icon4} alt="Create 8 pull requests" />
                   <p className='leading-6 font-normal'>Create 8 pull requests (PRs) between Oct 1 to Oct 31, 2023.</p>
                 </div>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
-                  <img className='mb-md-6x' src={Icon5} alt="" />
+                  <img className='mb-md-6x' src={Icon5} alt="At least 5 PRs should be in repositories not owned by you." />
                   <p className='leading-6 font-normal'>At least 5 PRs should be in repositories not owned by you.</p>
                 </div>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
-                  <img className='mb-md-6x' src={Icon6} alt="" />
+                  <img className='mb-md-6x' src={Icon6} alt=" PRs can be made to any public repository on GitHub." />
                   <p className='leading-6 font-normal'> PRs can be made to any public repository on GitHub.</p>
                 </div>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
-                  <img className='mb-md-6x' src={Icon7} alt="" />
+                  <img className='mb-md-6x' src={Icon7} alt="PRs should not be labeled as ‘invalid." />
                   <p className='leading-6 font-normal'>PRs should not be labeled as ‘invalid.&apos;</p>
                 </div>
               </div>
@@ -356,25 +357,25 @@ const Home = () => {
             <div className="row flex-wrap gutter-8x">
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img2} alt="" />
+                  <img className='img-full' src={Img2} alt="Leaps & Bonds" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img3} alt="" />
+                  <img className='img-full' src={Img3} alt=">Leaps & Bonds" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img4} alt="" />
+                  <img className='img-full' src={Img4} alt=">Leaps & Bonds" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img5} alt="" />
+                  <img className='img-full' src={Img5} alt=">Leaps & Bonds" />
                 </figure>
               </div>
             </div>
@@ -399,25 +400,25 @@ const Home = () => {
             <div className="row flex-wrap gutter-8x">
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img6} alt="" />
+                  <img className='img-full' src={Img6} alt="SWAG for you" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img7} alt="" />
+                  <img className='img-full' src={Img7} alt="SWAG for you" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img8} alt="" />
+                  <img className='img-full' src={Img8} alt="SWAG for you" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
                 <figure className='has-overlay'>
-                  <img className='img-full' src={Img9} alt="" />
+                  <img className='img-full' src={Img9} alt="SWAG for you" />
                 </figure>
               </div>
             </div>
@@ -468,7 +469,7 @@ const Home = () => {
       </main>
 
       <div className='antenna'>
-        <img src={Antenna}/>
+        <img src={Antenna} alt='Antenna'/>
       </div>
 
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
@@ -484,7 +485,7 @@ const Home = () => {
                 </div>
 
                 <figure className='d-none d-md-block mt-10x'>
-                  <img src={Logo} alt="" />
+                  <img src={Logo} alt="Frogtoberfest Logo" />
                 </figure>
               </div>
             </div>
@@ -502,16 +503,16 @@ const Home = () => {
                 <div className="">
                   <p className='mb-4x fw-300'>Follow us at our socials</p>
                   <ul className='social-icons d-flex gap-6x'>
-                    <li><a href="https://www.facebook.com/lftechnology?mibextid=LQQJ4d" target='_blank'>
+                    <li><a href="https://www.facebook.com/lftechnology?mibextid=LQQJ4d" target='_blank' rel="noopener noreferrer">
                       <i className="fa-brands fa-facebook"></i>
                     </a></li>
-                    <li><a href="https://x.com/lftechnology?s=21" target='_blank'> <i className="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://instagram.com/lftechnology?igshid=MzRlODBiNWFlZA==" target='_blank'> <i className="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://x.com/lftechnology?s=21" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com/lftechnology?igshid=MzRlODBiNWFlZA==" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-instagram"></i></a></li>
                   </ul>
                 </div>
 
                 <figure className='d-block d-md-none mt-10x hide-sm'>
-                  <img src={Logo} alt="" />
+                  <img src={Logo} alt="Frogtoberfest Logo" />
                 </figure>
               </div>
             </div>
@@ -525,3 +526,4 @@ const Home = () => {
 };
 
 export default Home;
+ 
