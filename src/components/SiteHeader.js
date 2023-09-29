@@ -1,40 +1,39 @@
-import React, { Fragment, useEffect} from 'react';
+import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 import Logo from 'assets/images/logo.svg';
 
 const SiteHeader = () => {
-    useEffect(()=> {
+    useEffect(() => {
         // Mobile menu Drawer
         const toggleMenu = () => {
-          const menu = document.querySelector('.nav');
-          const overlay = document.querySelector('.overlay');
-    
-          menu.classList.toggle('is-active');
-          if(overlay!==null){
-              overlay.classList.toggle('is-active');    
+            const menu = document.querySelector('.nav');
+            const overlay = document.querySelector('.overlay');
+
+            menu.classList.toggle('is-active');
+            if (overlay !== null) {
+                overlay.classList.toggle('is-active');
             }
         };
-    
+
         const buttons = document.querySelectorAll('.menu-toggle, .overlay, .menu-close');
-    
+
         for (let i = 0; i < buttons.length; i++) {
-          buttons[i].addEventListener('click', toggleMenu);
+            buttons[i].addEventListener('click', toggleMenu);
         }
-    
+
         // Header Sticky
-        window.addEventListener('scroll', () => {
-          const header = document.querySelector('header');
-          if (window.scrollY > 200) {
+        const header = document.querySelector('header');
+        if (window.scrollY > 200) {
             header.classList.add('sticky');
-          } else {
-            if(header.classList){
+        } else {
+            if (header.classList) {
                 header.classList.remove('sticky');
             }
-          }
-        });
-      },[]);
+        }
+    }, []);
+
     return (
         <Fragment>
             <header className='header pt-6x pt-md-12x'>
@@ -43,8 +42,8 @@ const SiteHeader = () => {
 
                         <div className="logo">
                             <figure>
-                            <a className='nav__link' href="/">
-                                <img src={Logo} alt="Frogtoberfest Logo" />
+                                <a className='nav__link' href="/">
+                                    <img src={Logo} alt="Frogtoberfest Logo" />
                                 </a>
                             </figure>
                         </div>
