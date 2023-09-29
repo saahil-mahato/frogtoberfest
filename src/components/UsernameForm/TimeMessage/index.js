@@ -8,7 +8,7 @@ const TimeMessage = () => (
 );
 
 const timeMessageStyle = {
-  color: '#411e2f'
+  color: '#fff'
 };
 
 export default TimeMessage;

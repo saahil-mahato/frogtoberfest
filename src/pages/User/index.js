@@ -1,9 +1,9 @@
 import React, { Fragment, Component } from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import SiteTitle from 'components/SiteTitle';
 import UsernameForm from 'components/UsernameForm';
 import PullRequests from './components/PullRequests';
+import SiteHeader from 'components/SiteHeader';
 
 /**
  * User Component.
@@ -43,9 +43,8 @@ export class User extends Component {
 
     return (
       <Fragment>
-        <Helmet>
-          <title>{username}</title>
-        </Helmet>
+        <SiteHeader></SiteHeader>
+        <div className='banner banner--img-fixed'>
         <SiteTitle>Frogtoberfest Checker</SiteTitle>
         <UsernameForm
           username={username}
@@ -53,6 +52,7 @@ export class User extends Component {
           totalOtherPrCount={this.state.totalOtherPrCount}
         />
         <PullRequests username={username} setUserContributionCount={this.setUserContributionCount.bind(this)} />
+        </div>
       </Fragment>
     );
   }

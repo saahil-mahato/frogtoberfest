@@ -3,9 +3,7 @@ import withRouter from 'react-router-dom/withRouter';
 import PropTypes from 'prop-types';
 
 import { TOTAL_PR_COUNT, TOTAL_OTHER_PR_COUNT } from 'config';
-import CompletionMessage from './CompletionMessage';
 import UsernameInput from './UsernameInput';
-import TimeMessage from './TimeMessage';
 import CheckButton from './CheckButton';
 
 /**
@@ -86,11 +84,11 @@ class UsernameForm extends Component {
   }
 
   render = () => {
-    const isComplete = this.checkEligibility(this.props.totalPrCount, this.props.totalOtherPrCount);
+    // const isComplete = this.checkEligibility(this.props.totalPrCount, this.props.totalOtherPrCount);
 
     return (
       <div className="pb-8 pt-4 sm:pt-10">
-        {isComplete ? <CompletionMessage /> : <TimeMessage />}
+        {/* {isComplete ? <CompletionMessage /> : <TimeMessage />} */}
 
         <form
           className="flex mx-auto w-3/4 sm:w-1/2"

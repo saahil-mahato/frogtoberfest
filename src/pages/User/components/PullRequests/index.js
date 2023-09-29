@@ -4,13 +4,10 @@ import PropTypes from 'prop-types';
 import ShareButtons from './ShareButtons';
 import LoadingIcon from './LoadingIcon';
 import PullRequest from './PullRequest';
-import IssuesLink from './IssuesLink';
-import MeLinkInfo from './MeLinkInfo';
 import ErrorText from './ErrorText';
 import UserInfo from './UserInfo';
 import { fetchInfoFromGitHub, getApiUrls } from 'services/index';
 import { GITHUB_TOKEN, TOTAL_PR_COUNT, TOTAL_OTHER_PR_COUNT, LF_CAREER_URL } from 'config';
-import MotivationalMessage from './UserInfo/MotivationalMessage/index';
 
 /**
  * Returns an object containing user info.
@@ -243,28 +240,28 @@ class PullRequests extends Component {
       return <ErrorText errorMessage={this.getErrorMessage()} />;
     }
 
-    const isComplete = this.conditionChecker(data, userDetail);
+    // const isComplete = this.conditionChecker(data, userDetail);
 
     return (
       <Fragment>
-        <div className="text-center text-white">
-          <ShareButtons username={username} pullRequestCount={data.items.length} />
-          <div className="flex flex-wrap justify-center content-center flex-col pb-4">
-            <MotivationalMessage pullRequestCount={data.items.length} otherReposCount={this.state.otherReposCount} />
-          </div>
+        <div className='flex justify-center content-center w-full mt-8 lg:flex-row md:flex-col sm:flex-col item-center mx-auto my-0 gitaccount'>
+
+        <div className="text-center text-white gitaccount__profile">
           <UserInfo
             username={username}
             userImage={userDetail.items[0].avatar_url}
             pullRequestCount={data.items.length}
             otherReposCount={this.state.otherReposCount}
-          />
+            />
+          <ShareButtons username={username} pullRequestCount={data.items.length} />
         </div>
-        <div className="rounded mx-auto shadow overflow-hidden w-5/6 lg:w-1/2 mb-4">
+        <div className="rounded  shadow overflow-hidden mb-4 ml-10 lg:ml-10 gitaccount__content">
           {data.items.length > 0 &&
             data.items.map((pullRequest, i) => <PullRequest pullRequest={pullRequest} key={i} />)}
         </div>
-        {!isComplete && <IssuesLink />}
-        <MeLinkInfo username={username} />
+        </div>
+        {/* {!isComplete && <IssuesLink />} */}
+        {/* <MeLinkInfo username={username} /> */}
       </Fragment>
     );
   };
