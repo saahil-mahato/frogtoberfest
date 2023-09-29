@@ -6,7 +6,7 @@
 	color: getColor('white.base');
 	background: linear-gradient(
 		180deg,
-		getColor('white.base') 0%,
+		getColor('white.base') -20%,
 		rgba(getColor('white.base'), 0.1) 100%
 	);
 	backdrop-filter: blur(17.875px);

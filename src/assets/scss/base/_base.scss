@@ -127,3 +127,22 @@ ul {
 	max-width:382px;
   }
 
+.initiatives{
+	display: block;
+	@include mqmax('md'){
+		display:none;
+	}
+
+	@include m(mobile-view){
+		display:none;
+		@include mqmax('md'){
+			display:block;
+		}
+	}
+}
+
+div.mb-md-0x{
+	@include mqmax(md){
+		margin-bottom:0 !important;
+	}
+}

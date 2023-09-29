@@ -590,7 +590,7 @@ const Home = () => {
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
         <div className="container">
           <div className="row gutter-x-md-11x">
-            <div className="col-12 col-md-6 col-xl-7 mb-10x mb-md-0x mb-sm-0x">
+            <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
               <div className="max-w-lg-665">
                 <div className="">
                   <h3 className='mb-4x font-racing'>Subscribe to our newsletter</h3>
@@ -602,6 +602,10 @@ const Home = () => {
                 <figure className='d-none d-md-block mt-10x'>
                   <img src={Logo} alt="Frogtoberfest Logo" />
                 </figure>
+
+                <div className='mt-9x initiatives'>
+                  <p>Initiatives of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
+                </div>
               </div>
             </div>
             <div className="col-12 col-md-6 col-xl-5">
@@ -629,6 +633,10 @@ const Home = () => {
                 <figure className='d-block d-md-none mt-10x hide-sm'>
                   <img src={Logo} alt="Frogtoberfest Logo" />
                 </figure>
+                <div className='mt-9x initiatives initiatives--mobile-view'>
+                  <p>Initiatives of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
+                </div>
+               
               </div>
             </div>
           </div>
