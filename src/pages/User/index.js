@@ -45,13 +45,13 @@ export class User extends Component {
       <Fragment>
         <SiteHeader></SiteHeader>
         <div className='banner banner--img-fixed'>
-        <SiteTitle>Frogtoberfest Checker</SiteTitle>
-        <UsernameForm
-          username={username}
-          totalPrCount={this.state.totalPrCount}
-          totalOtherPrCount={this.state.totalOtherPrCount}
-        />
-        <PullRequests username={username} setUserContributionCount={this.setUserContributionCount.bind(this)} />
+          <SiteTitle>Frogtoberfest</SiteTitle>
+          <UsernameForm
+            username={username}
+            totalPrCount={this.state.totalPrCount}
+            totalOtherPrCount={this.state.totalOtherPrCount}
+          />
+          <PullRequests username={username} setUserContributionCount={this.setUserContributionCount.bind(this)} />
         </div>
       </Fragment>
     );
