@@ -10,15 +10,14 @@ import Icon5 from 'assets/images/icon-5.svg';
 import Icon6 from 'assets/images/icon-6.svg';
 import Icon7 from 'assets/images/icon-7.svg';
 import Img1 from 'assets/images/img-1.png';
-import Img2 from 'assets/images/img-2.png';
-import Img3 from 'assets/images/img-3.png';
-import Img4 from 'assets/images/img-4.png';
-import Img5 from 'assets/images/img-5.png';
+import Img2 from 'assets/images/img-2.jpg';
+import Img3 from 'assets/images/img-3.jpg';
+import Img4 from 'assets/images/img-4.jpg';
+import Img5 from 'assets/images/img-5.jpg';
 import Img6 from 'assets/images/img-6.png';
 import Img7 from 'assets/images/img-7.png';
 import Img8 from 'assets/images/img-8.png';
 import Img9 from 'assets/images/img-9.png';
-import Antenna from 'assets/images/antenna.png';
 import Logo from 'assets/images/logo.svg';
 import SiteHeader from 'components/SiteHeader';
 
@@ -160,9 +159,20 @@ const Home = () => {
       <main>
         <section className="banner pt-10x text-center text-lg-left">
           <div className="container">
-            <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
-              <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
+            <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between lg:items-center">
+            <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
                 <img src={Img1} alt="Remaining Days" />
+
+         
+              </div>
+              <div className="order-2 order-lg-1">
+                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>5</span>
+                  YEARS
+                </h1>
+                <p className='mb-10x text-base text-md-sm mx-auto mx-lg-0x banner_text'>Open Source Hackathon for Leapfroggers and
+                  LeapNetwork</p>
+
+                <div className='d-flex flex-col justify-center md:items-center mb-10x timer'>
 
                 <div className="mb-2x text-center text-sm">Remaining</div>
                 <div className="d-flex gap-6x text-center">
@@ -190,17 +200,12 @@ const Home = () => {
                     <div className="time-label">minutes</div>
                   </div>
                 </div>
-              </div>
-              <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>5</span>
-                  YEARS
-                </h1>
-                <p className='mb-12x text-base text-md-lg max-w-500 mx-auto mx-lg-0x'>Open Source Hackathon for Leapfroggers and
-                  LeapNetwork</p>
+                </div>
+
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
                   <button className='btn btn-primary'><a className='text-black' href="#participation">Participate</a></button>
-                  <button className='btn btn-link'><Link className='text-white' to="https://frogtoberfest-leaderboard.lftechnology.com/">Leaderboard</Link></button>
+                  <button className='btn btn-outlined'><Link className='text-white' to="https://frogtoberfest-leaderboard.lftechnology.com/">Leaderboard</Link></button>
                 </div>
               </div>
 
@@ -357,25 +362,25 @@ const Home = () => {
 
             <div className="row flex-wrap gutter-8x">
               <div className="col-12 col-md-6 col-lg-3">
-                <figure className='has-overlay'>
+                <figure>
                   <img className='img-full' src={Img2} alt="Leaps & Bonds" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
-                <figure className='has-overlay'>
+                <figure>
                   <img className='img-full' src={Img3} alt=">Leaps & Bonds" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
-                <figure className='has-overlay'>
+                <figure>
                   <img className='img-full' src={Img4} alt=">Leaps & Bonds" />
                 </figure>
               </div>
 
               <div className="col-12 col-md-6 col-lg-3">
-                <figure className='has-overlay'>
+                <figure>
                   <img className='img-full' src={Img5} alt=">Leaps & Bonds" />
                 </figure>
               </div>
@@ -566,13 +571,30 @@ const Home = () => {
       </main>
 
       <div className='antenna'>
-        <img src={Antenna} alt='Antenna' />
+      <svg width="130" height="41" viewBox="0 0 130 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" stroke-width="3.0009"/>
+      <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" stroke-width="3.0009"/>
+      <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" stroke-width="3.0009"/>
+      <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" stroke-width="3.0009"/>
+      <defs>
+      <linearGradient id="paint0_linear_1945_76" x1="5.78414" y1="0" x2="5.78414" y2="11.5683" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2CC25"/>
+      <stop offset="1" stop-color="#B8732D"/>
+      </linearGradient>
+      <linearGradient id="paint1_linear_1945_76" x1="9.34859" y1="3" x2="9.34859" y2="14.5683" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2CC25"/>
+      <stop offset="1" stop-color="#B8732D"/>
+      </linearGradient>
+      </defs>
+      </svg>
+
+
       </div>
 
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
         <div className="container">
           <div className="row gutter-x-md-11x">
-            <div className="col-12 col-md-6 col-xl-7 mb-10x mb-md-0x">
+            <div className="col-12 col-md-6 col-xl-7 mb-10x mb-md-0x mb-sm-0x">
               <div className="max-w-lg-665">
                 <div className="">
                   <h3 className='mb-4x font-racing'>Subscribe to our newsletter</h3>
@@ -588,14 +610,14 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-6 col-xl-5">
               <div className="">
-                {/* <div class="ml-form-embed"
+                <div className="ml-form-embed"
                 data-account="738785:d6l2h0j5t4"
                 data-form="5983064:r5a2f4">
-              </div> */}
-                <form className='form-subscribe mb-10x' action="">
+              </div>
+                {/* <form className='form-subscribe mb-10x' action="">
                   <input className='form-control' type="email" placeholder='Enter you email here' />
                   <input className='form-submit' type="submit" value="Subscribe" />
-                </form>
+                </form> */}
 
                 <div className="">
                   <p className='mb-4x fw-300'>Follow us at our socials</p>

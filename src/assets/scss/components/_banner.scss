@@ -36,12 +36,12 @@
 		@include mqmax('xl'){
 			flex-direction: column;
 			gap:4px;
-			margin-bottom:4px;
+			margin-bottom:16px;
 			align-items: flex-start;
 		}
 
 		@include mqmax('lg'){
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			gap: 16px;
