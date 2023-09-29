@@ -24,6 +24,14 @@
 		}
 	}
 
+	&.btn-outlined{
+		font-weight: 400;
+		border:1px solid transparent;
+		&:hover{
+			border-color: getColor('primary.base');
+		}
+	}
+
 	@each $theme-color, $color in $theme-colors {
 		&-#{$theme-color} {
 			background-color: $color;

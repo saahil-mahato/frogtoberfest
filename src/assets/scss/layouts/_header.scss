@@ -9,6 +9,16 @@
 		padding: 12px !important;
 		animation: slideIn 0.6s ease-in-out forwards;
 	}
+
+	@include e(banner_text){
+		margin-top:-2rem;
+		@include mqmax('lg'){
+			margin-top: 1rem;
+		}
+		@include mqmax('md'){
+			margin-top: 1rem;
+		}
+	}
 }
 
 .logo {
@@ -17,6 +27,8 @@
 		max-width: fit-content;
 	}
 }
+
+
 
 @keyframes slideIn {
 	0% {
