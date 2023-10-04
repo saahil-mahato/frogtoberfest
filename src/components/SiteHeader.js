@@ -51,10 +51,10 @@ const SiteHeader = () => {
                         <nav className='nav p-6x pt-10x p-lg-0x'>
                             <ul className='d-flex flex-column flex-lg-row gap-x-lg-12x gap-y-6x'>
                                 <li className='nav__item'><a className='nav__link' href="/#participation">Participation</a></li>
-                                <li className='nav__item'><a className='nav__link' href="https://frogtoberfest-leaderboard.lftechnology.com/" target="_blank" rel="noopener noreferrer">Leaderboard</a></li>
-                                <li className='nav__item'><Link className='nav__link' to="/checker">Checker</Link></li>
                                 <li className='nav__item'><a className='nav__link' href="/#swag">SWAG</a></li>
                                 <li className='nav__item'><a className='nav__link' href="/#faq">FAQs</a></li>
+                                <li className='nav__item'>|</li>
+                                <li className='nav__item'><Link className='nav__link' to="/checker">Checker</Link></li>
                             </ul>
 
                             <button className="menu-close d-lg-none">
