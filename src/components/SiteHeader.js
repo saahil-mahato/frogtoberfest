@@ -53,7 +53,6 @@ const SiteHeader = () => {
                                 <li className='nav__item'><a className='nav__link' href="/#participation">Participation</a></li>
                                 <li className='nav__item'><a className='nav__link' href="/#swag">SWAG</a></li>
                                 <li className='nav__item'><a className='nav__link' href="/#faq">FAQs</a></li>
-                                <li className='nav__item'>|</li>
                                 <li className='nav__item'><Link className='nav__link' to="/checker">Checker</Link></li>
                             </ul>
 
