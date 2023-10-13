@@ -24,14 +24,16 @@ const SiteHeader = () => {
         }
 
         // Header Sticky
-        const header = document.querySelector('header');
-        if (window.scrollY > 200) {
-            header.classList.add('sticky');
-        } else {
-            if (header.classList) {
+        const handleScroll = () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 200) {
+                header.classList.add('sticky');
+            } else {
                 header.classList.remove('sticky');
             }
-        }
+        };
+        window.addEventListener('scroll', handleScroll);
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
