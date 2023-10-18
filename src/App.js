@@ -7,6 +7,7 @@ import User from './pages/User';
 import Checker from './pages/Checker';
 import Me from './pages/Me';
 import NotFound from './pages/NotFound';
+import Guidelines from './pages/Guidelines';
 
 const App = () => (
   <Fragment>
@@ -18,6 +19,7 @@ const App = () => (
           <Route exact path="/checker" component={Checker} />
           <Route exact path="/user/:username" component={User} />
           <Route exact path="/me" component={Me} />
+          <Route exact path="/guidelines" component={Guidelines} />
           <Route component={NotFound} />
         </Switch>
       </Router>

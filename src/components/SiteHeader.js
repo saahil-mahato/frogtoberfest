@@ -56,6 +56,7 @@ const SiteHeader = () => {
                                 <li className='nav__item'><a className='nav__link' href="/#swag">SWAG</a></li>
                                 <li className='nav__item'><a className='nav__link' href="/#faq">FAQs</a></li>
                                 <li className='nav__item'><Link className='nav__link' to="/checker">Checker</Link></li>
+                                <li className='nav__item'><Link className='nav__link' to="/guidelines">Guidelines</Link></li>
                             </ul>
 
                             <button className="menu-close d-lg-none">
