@@ -15,7 +15,7 @@ const ShareButtons = ({ username, pullRequestCount }) => {
           href={TWITTER_LINK}
           data-size="large"
         >
-          <i className="fab fa-twitter fa-lg mr-1 text-white" /> Twitter
+          <i className="fa-brands fa-x-twitter fa-lg mr-1 text-white" /> Twitter
         </a>
       </div>
       <div
