@@ -19,7 +19,7 @@ const ShareButtons = ({ username, pullRequestCount }) => {
         </a>
       </div>
       <div
-        className="p-2" d-block
+        className="p-2"
         id="fb-share"
         data-href={`${HOSTNAME}/username/${username}`}
         data-layout="button"

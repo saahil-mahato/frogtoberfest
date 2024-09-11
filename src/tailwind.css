@@ -10,9 +10,16 @@
  */
 
 html {
-  line-height: 1.15; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  font-family: sans-serif;
+  /* 2 */
 }
 
 /* Sections
@@ -78,9 +85,12 @@ figure {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -89,8 +99,10 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
@@ -102,8 +114,10 @@ pre {
  */
 
 a {
-  background-color: transparent; /* 1 */
-  -webkit-text-decoration-skip: objects; /* 2 */
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
 }
 
 /**
@@ -112,9 +126,12 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
 }
 
 /**
@@ -124,14 +141,6 @@ abbr[title] {
 b,
 strong {
   font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
   font-weight: bolder;
 }
 
@@ -143,8 +152,10 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -214,12 +225,10 @@ audio:not([controls]) {
   height: 0;
 }
 
-/**
- * Remove the border on images inside links in IE 10-.
- */
-
 img {
-  border-style: none;
+  border-style: solid;
+  max-width: 100%;
+  height: auto;
 }
 
 /**
@@ -243,10 +252,15 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+
 }
 
 /**
@@ -279,9 +293,11 @@ select {
 
 button,
 html [type='button'],
-/* 1 */ [type='reset'],
+/* 1 */
+[type='reset'],
 [type='submit'] {
-  -webkit-appearance: button; /* 2 */
+  -webkit-appearance: button;
+  appearance: button;
 }
 
 /**
@@ -323,12 +339,18 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -337,8 +359,10 @@ legend {
  */
 
 progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
 /**
@@ -347,6 +371,7 @@ progress {
 
 textarea {
   overflow: auto;
+  resize: vertical;
 }
 
 /**
@@ -356,8 +381,10 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -375,8 +402,11 @@ textarea {
  */
 
 [type='search'] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  appearance: button;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
@@ -394,8 +424,10 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /* Interactive
@@ -407,7 +439,8 @@ textarea {
  */
 
 details,
-/* 1 */ menu {
+/* 1 */
+menu {
   display: block;
 }
 
@@ -455,21 +488,13 @@ template {
  * suitable for web applications.
  */
 
-/**
- * 1. Prevent padding and border from affecting element width
- * https://goo.gl/pYtbK7
- * 2. Change the default font family in all browsers (opinionated)
- */
-
-html {
-  box-sizing: border-box; /* 1 */
-  font-family: sans-serif; /* 2 */
-}
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  border-width: 0;
+  border-style: solid;
+  border-color: #dae1e7;
 }
 
 /**
@@ -506,56 +531,9 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
 ol,
 ul {
   margin: 0;
-}
-
-/**
- * Tailwind custom reset styles
- */
-
-/**
- * Allow adding a border to an element by just adding a border-width.
- *
- * By default, the way the browser specifies that an element should have no
- * border is by setting it's border-style to `none` in the user-agent
- * stylesheet.
- *
- * In order to easily add borders to elements by just setting the `border-width`
- * property, we change the default border-style for all elements to `solid`, and
- * use border-width to hide them instead. This way our `border` utilities only
- * need to set the `border-width` property instead of the entire `border`
- * shorthand, making our border utilities much more straightforward to compose.
- *
- * https://github.com/tailwindcss/tailwindcss/pull/116
- */
-
-*,
-*::before,
-*::after {
-  border-width: 0;
-  border-style: solid;
-  border-color: #dae1e7;
-}
-
-/**
- * Undo the `border-style: none` reset that Normalize applies to images so that
- * our `border-{width}` utilities have the expected effect.
- *
- * The Normalize reset is unnecessary for us since we default the border-width
- * to 0 on all elements.
- *
- * https://github.com/tailwindcss/tailwindcss/issues/362
- */
-
-img {
-  border-style: solid;
 }
 
 /**
@@ -569,18 +547,9 @@ button,
 [type='reset'],
 [type='submit'] {
   border-radius: 0;
+  font-family: inherit;
 }
 
-textarea {
-  resize: vertical;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button,
 input,
 optgroup,
 select,

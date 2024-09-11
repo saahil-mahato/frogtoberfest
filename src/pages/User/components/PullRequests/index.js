@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import ShareButtons from './ShareButtons';
@@ -7,7 +8,7 @@ import PullRequest from './PullRequest';
 import ErrorText from './ErrorText';
 import UserInfo from './UserInfo';
 import { fetchInfoFromGitHub, getApiUrls } from 'services/index';
-import { GITHUB_TOKEN, TOTAL_PR_COUNT, TOTAL_OTHER_PR_COUNT, LF_CAREER_URL } from 'config';
+import { GITHUB_TOKEN, LF_CAREER_URL } from 'config';
 
 /**
  * Returns an object containing user info.
@@ -29,42 +30,35 @@ export async function fetchUserInfo(username) {
 /**
  * Pull Requests component.
  */
-class PullRequests extends Component {
-  static defaultProps = {
-    username: PropTypes.string.isRequired
-  };
-
-  state = {
+const PullRequests = ({ setUserContributionCount }) => {
+  const { username } = useParams(); // Get the username from the URL
+  const [state, setState] = React.useState({
     loading: true,
     data: null,
     error: null,
     userDetail: null,
-    otherReposCount: null
-  };
+    otherReposCount: null,
+    isOrgMember: true,
+  });
 
-  componentDidMount = () => {
-    this.storeUsernameAsMe();
-    this.fetchPullRequests();
-  };
+  React.useEffect(() => {
+    storeUsernameAsMe();
+    fetchPullRequests();
+  }, []);
 
   /**
    * Lifecycle event for component update.
    *
    * @param {*} prevProps
    */
-  componentDidUpdate = prevProps => {
-    if (prevProps.username === this.props.username) {
-      return;
-    }
-    this.fetchPullRequests();
-  };
+  React.useEffect(() => {
+    fetchPullRequests();
+  }, [username]);
 
   /**
    * Persist username in the local storage.
    */
-  storeUsernameAsMe = () => {
-    const username = this.props.username;
-
+  const storeUsernameAsMe = () => {
     if (localStorage.getItem('myGithub')) {
       return;
     }
@@ -77,20 +71,20 @@ class PullRequests extends Component {
    *
    * @returns {Promise}
    */
-  fetchPullRequests = async () => {
+  const fetchPullRequests = async () => {
     try {
-      const username = this.props.username;
       const userInfo = await fetchUserInfo(username);
 
-      this.displayPullRequests(userInfo);
+      displayPullRequests(userInfo);
     } catch (error) {
-      this.setState({
+      setState(prevState => ({
+        ...prevState,
         error,
         loading: false,
         data: null,
         userDetail: null,
-        isOrgMember: true
-      });
+        isOrgMember: true,
+      }));
     }
   };
 
@@ -99,14 +93,14 @@ class PullRequests extends Component {
    *
    * @returns {node}
    */
-  getErrorMessage = () => {
-    const { data, error } = this.state;
+  const getErrorMessage = () => {
+    const { data, error } = state;
 
-    if (error && error.description) {
+    if (error?.description) {
       return <> error.error_description</>;
     }
 
-    if (data && data.errors) {
+    if (data?.errors) {
       return <> data.errors.message</>;
     }
 
@@ -118,31 +112,14 @@ class PullRequests extends Component {
    *
    * @returns {node}
    */
-  getNotAMemberMessage = () => {
+  const getNotAMemberMessage = () => {
     return (
       <>
         You are not a member of Leapfrog Technology. However, you can join our{' '}
-        <a href={LF_CAREER_URL} target="_blank" rel="noopener noreferrer">
-          awesome team
-        </a>
-        . 😉
+        <a href={LF_CAREER_URL} target="_blank" rel="noopener noreferrer">awesome team</a>. 😉
       </>
     );
   };
-
-  /**
-   * Check the condition for eligibility.
-   *
-   * @param {*} data
-   * @returns {boolean}
-   */
-  conditionChecker(data) {
-    if (data.items.length < TOTAL_PR_COUNT) {
-      return false;
-    }
-
-    return this.state.otherReposCount >= TOTAL_OTHER_PR_COUNT;
-  }
 
   /**
    * Count other repositories.
@@ -151,7 +128,7 @@ class PullRequests extends Component {
    * @param {*} userDetail
    * @returns {number}
    */
-  countOtherRepos(data, userDetail) {
+  const countOtherRepos = (data, userDetail) => {
     const user = userDetail.items[0].login;
     let count = 0;
 
@@ -168,28 +145,29 @@ class PullRequests extends Component {
     });
 
     return count;
-  }
+  };
 
   /**
    * Change state to list PRs.
    *
    * @param {*} userInfo
    */
-  displayPullRequests = userInfo => {
+  const displayPullRequests = userInfo => {
     const { data, userDetail } = userInfo;
-    const validData = this.getValidPullRequests(data);
-    const otherReposCount = this.countOtherRepos(validData, userDetail);
+    const validData = getValidPullRequests(data);
+    const otherReposCount = countOtherRepos(validData, userDetail);
 
-    this.props.setUserContributionCount(validData.items.length, otherReposCount);
+    setUserContributionCount(validData.items.length, otherReposCount);
 
-    this.setState({
+    setState(prevState => ({
+      ...prevState,
       data: validData,
       userDetail,
       loading: false,
       otherReposCount,
       error: null,
-      isOrgMember: true
-    });
+      isOrgMember: true,
+    }));
   };
 
   /**
@@ -198,7 +176,7 @@ class PullRequests extends Component {
    * @param {*} data
    * @returns {*}
    */
-  getValidPullRequests(data) {
+  const getValidPullRequests = data => {
     const validPullRequests = data.items.filter(pr => {
       const hasInvalidLabel = ({ name }) => name.toLowerCase() === 'invalid';
       const isPullRequestValid = pr.labels.filter(hasInvalidLabel).length === 0;
@@ -207,69 +185,41 @@ class PullRequests extends Component {
     });
 
     return { ...data, total_count: validPullRequests.length, items: validPullRequests }; // eslint-disable-line camelcase
+  };
+
+  if (state.loading) {
+    return <LoadingIcon />;
   }
 
-  /**
-   * Shows up NotAMember message for non leapfroggers.
-   */
-  showNotAMemberMessage = () => {
-    this.setState({
-      isOrgMember: false,
-      loading: false,
-      data: null,
-      userDetail: null
-    });
-  };
+  if (!state.isOrgMember) {
+    return <ErrorText errorMessage={getNotAMemberMessage()} />;
+  }
 
-  /**
-   * Render the component.
-   */
-  render = () => {
-    const username = this.props.username;
-    const { loading, data, error, userDetail, isOrgMember } = this.state;
+  if (state.error || state.data?.errors || state.data?.message) {
+    return <ErrorText errorMessage={getErrorMessage()} />;
+  }
 
-    if (loading) {
-      return <LoadingIcon />;
-    }
-
-    if (!isOrgMember) {
-      return <ErrorText errorMessage={this.getNotAMemberMessage()} />;
-    }
-
-    if (error || data.errors || data.message) {
-      return <ErrorText errorMessage={this.getErrorMessage()} />;
-    }
-
-    // const isComplete = this.conditionChecker(data, userDetail);
-
-    return (
-      <Fragment>
-        <div className='flex justify-center content-center w-full mt-8 lg:flex-row md:flex-col sm:flex-col item-center mx-auto my-0 gitaccount'>
-
-        <div className="text-center text-white gitaccount__profile">
-          <UserInfo
-            username={username}
-            userImage={userDetail.items[0].avatar_url}
-            pullRequestCount={data.items.length}
-            otherReposCount={this.state.otherReposCount}
-            />
-          <ShareButtons username={username} pullRequestCount={data.items.length} />
-        </div>
-        <div className="rounded  shadow overflow-hidden mb-4 ml-10 lg:ml-10 gitaccount__content">
-          {data.items.length > 0 &&
-            data.items.map((pullRequest, i) => <PullRequest pullRequest={pullRequest} key={i} />)}
-        </div>
-        </div>
-        {/* {!isComplete && <IssuesLink />} */}
-        {/* <MeLinkInfo username={username} /> */}
-      </Fragment>
-    );
-  };
-}
+  return (
+    <div className='flex justify-center content-center w-full mt-8 lg:flex-row md:flex-col sm:flex-col item-center mx-auto my-0 gitaccount'>
+      <div className="text-center text-white gitaccount__profile">
+        <UserInfo
+          username={username}
+          userImage={state.userDetail?.items[0].avatar_url}
+          pullRequestCount={state.data?.items.length}
+          otherReposCount={state.otherReposCount}
+        />
+        <ShareButtons username={username} pullRequestCount={state.data?.items.length} />
+      </div>
+      <div className="rounded  shadow overflow-hidden mb-4 ml-10 lg:ml-10 gitaccount__content">
+        {state.data?.items.length > 0 &&
+          state.data.items.map((pullRequest, i) => <PullRequest pullRequest={pullRequest} key={pullRequest.title} />)}
+      </div>
+    </div>
+  );
+};
 
 PullRequests.propTypes = {
-  username: PropTypes.string,
-  setUserContributionCount: PropTypes.func.isRequired
+  setUserContributionCount: PropTypes.func.isRequired,
 };
 
 export default PullRequests;

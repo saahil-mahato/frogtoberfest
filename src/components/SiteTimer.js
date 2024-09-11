@@ -70,7 +70,6 @@ const SiteTimer = () => {
 
     useEffect(() => {
         countDownClock(dif, 'seconds');
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (<div className='d-flex flex-col justify-center md:items-center mb-10x timer'>

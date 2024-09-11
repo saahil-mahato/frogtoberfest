@@ -1,5 +1,5 @@
-import React, { Fragment, Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import SiteTitle from 'components/SiteTitle';
 import UsernameForm from 'components/UsernameForm';
 import PullRequests from './components/PullRequests';
@@ -8,62 +8,36 @@ import SiteHeader from 'components/SiteHeader';
 /**
  * User Component.
  */
-export class User extends Component {
-  state = {
-    totalPrCount: 0,
-    totalOtherPrCount: 0
-  };
+const User = () => {
+  const { username } = useParams(); // Get the username from the URL
+  const [totalPrCount, setTotalPrCount] = useState(0);
+  const [totalOtherPrCount, setTotalOtherPrCount] = useState(0);
 
-  /**
-   * Set user contribution count of pull requests and other pull request count.
-   *
-   * @param {*} totalPrCount
-   * @param {*} totalOtherPrCount
-   */
-  setUserContributionCount = (totalPrCount, totalOtherPrCount) => {
-    if ((totalPrCount || totalPrCount === 0) && (totalOtherPrCount || totalOtherPrCount === 0)) {
-      this.setState({
-        totalPrCount,
-        totalOtherPrCount
-      });
+  const setUserContributionCount = (newTotalPrCount, newTotalOtherPrCount) => {
+    if ((newTotalPrCount || newTotalPrCount === 0) && (newTotalOtherPrCount || newTotalOtherPrCount === 0)) {
+      setTotalPrCount(newTotalPrCount);
+      setTotalOtherPrCount(newTotalOtherPrCount);
     }
   };
 
-  /**
-   * Render method for User Component.
-   *
-   * @returns React.Element.
-   */
-  render() {
-    const {
-      match: {
-        params: { username }
-      }
-    } = this.props;
-
-    return (
-      <Fragment>
-        <SiteHeader></SiteHeader>
-        <div className='banner banner--img-fixed'>
-          <SiteTitle>Frogtoberfest</SiteTitle>
-          <UsernameForm
-            username={username}
-            totalPrCount={this.state.totalPrCount}
-            totalOtherPrCount={this.state.totalOtherPrCount}
-          />
-          <PullRequests username={username} setUserContributionCount={this.setUserContributionCount.bind(this)} />
-        </div>
-      </Fragment>
-    );
-  }
-}
+  return (
+    <Fragment>
+      <SiteHeader />
+      <div className='banner banner--img-fixed'>
+        <SiteTitle>Frogtoberfest</SiteTitle>
+        <UsernameForm
+          username={username}
+          totalPrCount={totalPrCount}
+          totalOtherPrCount={totalOtherPrCount}
+        />
+        <PullRequests username={username} setUserContributionCount={setUserContributionCount} />
+      </div>
+    </Fragment>
+  );
+};
 
 User.propTypes = {
-  match: PropTypes.shape({
-    params: PropTypes.shape({
-      username: PropTypes.string.isRequired
-    }).isRequired
-  }).isRequired
+  // No need for propTypes since we're using hooks and not receiving props
 };
 
 export default User;

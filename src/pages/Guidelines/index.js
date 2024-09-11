@@ -22,7 +22,7 @@ const Guidelines = () => (
         </div>
         <div className="my-10x">
           <h4>
-            <span role="img" aria-label="Wrench" className="mr-2x">
+            <span aria-label="Wrench" className="mr-2x">
               🔧
             </span>
             <span>Meaningful code changes</span>
@@ -34,7 +34,7 @@ const Guidelines = () => (
         </div>
         <div className="my-10x">
           <h4>
-            <span role="img" aria-label="Orange books" className="mr-2x">
+            <span aria-label="Orange books" className="mr-2x">
               📚
             </span>
             <span>Documentation enhancements</span>
@@ -46,7 +46,7 @@ const Guidelines = () => (
         </div>
         <div className="my-10x">
           <h4>
-            <span role="img" aria-label="Magnifying glass" className="mr-2x">
+            <span aria-label="Magnifying glass" className="mr-2x">
               🔍
             </span>
             <span>Issue tracking</span>
@@ -58,7 +58,7 @@ const Guidelines = () => (
         </div>
         <div className="my-10x">
           <h4>
-            <span role="img" aria-label="Light bulb" className="mr-2x">
+            <span aria-label="Light bulb" className="mr-2x">
               💡
             </span>
             <span>Value-added contributions</span>
@@ -70,7 +70,7 @@ const Guidelines = () => (
         </div>
         <div className="my-10x">
           <h4>
-            <span role="img" aria-label="Glowing star" className="mr-2x">
+            <span aria-label="Glowing star" className="mr-2x">
               🌟
             </span>
             <span>Quality over quantity</span>
@@ -82,7 +82,7 @@ const Guidelines = () => (
         </div>
         <div className="my-10x">
           <h4>
-            <span role="img" aria-label="Eye in speech bubble" className="mr-2x">
+            <span aria-label="Eye in speech bubble" className="mr-2x">
               👁️‍🗨️
             </span>
             <span>Code review process</span>
@@ -104,10 +104,7 @@ const Guidelines = () => (
             participants' achievements.
           </p>
           <p>
-            Happy contributing!
-            <span role="img" aria-label="Frog" className="ml-2x">
-              🐸
-            </span>
+            Happy contributing!<span aria-label="Frog" className="ml-2x">🐸</span>
           </p>
           <p className="pt-5x">
             As <strong>Frogtoberfest</strong> continues, we remain dedicated to these principles, ensuring that
@@ -118,7 +115,7 @@ const Guidelines = () => (
         </div>
       </div>
     </div>
-  </Fragment>
+  </Fragment >
 );
 
 export default Guidelines;

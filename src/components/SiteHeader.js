@@ -1,5 +1,5 @@
-import React, { Fragment, useEffect } from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 import Logo from 'assets/images/logo.svg';
@@ -19,8 +19,8 @@ const SiteHeader = () => {
 
         const buttons = document.querySelectorAll('.menu-toggle, .overlay, .menu-close');
 
-        for (let i = 0; i < buttons.length; i++) {
-            buttons[i].addEventListener('click', toggleMenu);
+        for (const element of buttons) {
+            element.addEventListener('click', toggleMenu);
         }
 
         // Header Sticky
@@ -33,47 +33,43 @@ const SiteHeader = () => {
             }
         };
         window.addEventListener('scroll', handleScroll);
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
-        <Fragment>
-            <header className='header pt-6x pt-md-12x'>
-                <div className="container">
-                    <div className="d-flex align-items-center justify-content-between">
+        <header className='header pt-6x pt-md-12x'>
+            <div className="container">
+                <div className="d-flex align-items-center justify-content-between">
 
-                        <div className="logo">
-                            <figure>
-                                <a className='nav__link' href="/">
-                                    <img src={Logo} alt="Frogtoberfest Logo" />
-                                </a>
-                            </figure>
-                        </div>
-                        <nav className='nav p-6x pt-10x p-lg-0x'>
-                            <ul className='d-flex flex-column flex-lg-row gap-x-lg-12x gap-y-6x'>
-                                <li className='nav__item'><a className='nav__link' href="/#participation">Participation</a></li>
-                                <li className='nav__item'><a className='nav__link' href="/#swag">SWAG</a></li>
-                                <li className='nav__item'><a className='nav__link' href="/#faq">FAQs</a></li>
-                                <li className='nav__item'><Link className='nav__link' to="/checker">Checker</Link></li>
-                                <li className='nav__item'><Link className='nav__link' to="/guidelines">Guidelines</Link></li>
-                            </ul>
+                    <div className="logo">
+                        <figure>
+                            <a className='nav__link' href="/">
+                                <img src={Logo} alt="Frogtoberfest Logo" />
+                            </a>
+                        </figure>
+                    </div>
+                    <nav className='nav p-6x pt-10x p-lg-0x'>
+                        <ul className='d-flex flex-column flex-lg-row gap-x-lg-12x gap-y-6x'>
+                            <li className='nav__item'><a className='nav__link' href="/#participation">Participation</a></li>
+                            <li className='nav__item'><a className='nav__link' href="/#swag">SWAG</a></li>
+                            <li className='nav__item'><a className='nav__link' href="/#faq">FAQs</a></li>
+                            <li className='nav__item'><Link className='nav__link' to="/checker">Checker</Link></li>
+                            <li className='nav__item'><Link className='nav__link' to="/guidelines">Guidelines</Link></li>
+                        </ul>
 
-                            <button className="menu-close d-lg-none">
-                                <span className="bar"></span>
-                                <span className="bar"></span>
-                            </button>
-                        </nav>
-
-                        <button className="menu-toggle">
-                            <span className="bar"></span>
+                        <button className="menu-close d-lg-none">
                             <span className="bar"></span>
                             <span className="bar"></span>
                         </button>
-                    </div>
+                    </nav>
+
+                    <button className="menu-toggle">
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                        <span className="bar"></span>
+                    </button>
                 </div>
-            </header>
-        </Fragment>
+            </div>
+        </header>
     );
 };
 

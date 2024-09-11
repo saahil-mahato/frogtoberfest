@@ -21,8 +21,8 @@ const SiteDetails = () => (
           </p>
         </div>
         <ul className="p-0">
-          {checklistItems.map((item, index) => (
-            <li className="flex leading-tight items-center mb-3" key={index}>
+          {checklistItems.map((item) => (
+            <li className="flex leading-tight items-center mb-3" key={item}>
               <div className="circle">
               </div>
               <span className="text-grey-darker text-m ml-2 card__text">{item}</span>

@@ -18,7 +18,6 @@ import Img8 from 'assets/images/img-8.png';
 import Img9 from 'assets/images/img-9.png';
 import Logo from 'assets/images/logo.svg';
 import SiteHeader from 'components/SiteHeader';
-// import SiteTimer from 'components/SiteTimer';
 
 const Home = () => {
   useEffect(() => {
@@ -54,8 +53,6 @@ const Home = () => {
         }
       });
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -73,7 +70,7 @@ const Home = () => {
 
     // Define the ml_account variable and initialize it
     window.ml = function () {
-      (window.ml.q = window.ml.q || []).push(arguments);
+      (window.ml.q || []).push(arguments);
     };
     window.ml('accounts', '738785', 'd6l2h0j5t4', 'load');
 
@@ -81,7 +78,6 @@ const Home = () => {
     return () => {
       document.head.removeChild(script);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -97,8 +93,8 @@ const Home = () => {
 
               </div>
               <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>5</span>
-                  YEARS
+                <h1 className='banner__title color-white--base fw-300 font-racing'>
+                  CELEBRATING <span className='color-primary--base font-chakra'>5</span> YEARS
                 </h1>
                 <p className='mb-10x text-base text-md-sm mx-auto mx-lg-0x banner_text'>Open Source Hackathon for Leapfroggers and
                   LeapNetwork</p>
@@ -184,8 +180,8 @@ const Home = () => {
 
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
-                  <img className='mb-md-6x' src={Icon7} alt="PRs should not be labeled as ‘invalid." />
-                  <p className='leading-6 font-normal'>PRs should not be labeled as ‘invalid.&apos;</p>
+                  <img className='mb-md-6x' src={Icon7} alt="PRs should not be labeled as 'invalid'." />
+                  <p className='leading-6 font-normal'>PRs should not be labeled as &apos;invalid&apos;.</p>
                 </div>
               </div>
             </div>
@@ -421,16 +417,19 @@ const Home = () => {
                   </span>
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
-                <p className="accordion-content-description mr-lg-15x">
-                  The judging criteria for Frogtober are primarily based on active contributions to the event.
+                <div className="accordion-content-description mr-lg-15x">
+                  <p>
+                    The judging criteria for Frogtober are primarily based on active contributions to the event.
+                  </p>
                   <ol className='pl-10'>
                     <li>Create 8 pull requests on GitHub between October 1 and October 31, 2023</li>
                     <li>At least 5 pull requests should be in repositories not owned by you</li>
                     <li>Ensure all PRs are valid.</li>
                   </ol>
-
-                  Note: The top 15 contributors who fulfill these requirements will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
-                </p>
+                  <p>
+                    Note: The top 15 contributors who fulfill these requirements will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
+                  </p>
+                </div>
               </div>
               <div className="accordion-content">
                 <header className='d-flex gap-5x'>
@@ -471,18 +470,18 @@ const Home = () => {
 
       <div className='antenna'>
         <svg width="130" height="41" viewBox="0 0 130 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" stroke-width="3.0009" />
-          <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
-          <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" stroke-width="3.0009" />
-          <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
+          <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" strokeWidth="3.0009" />
+          <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" strokeWidth="3.0009" />
+          <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" strokeWidth="3.0009" />
+          <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" strokeWidth="3.0009" />
           <defs>
             <linearGradient id="paint0_linear_1945_76" x1="5.78414" y1="0" x2="5.78414" y2="11.5683" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F2CC25" />
-              <stop offset="1" stop-color="#B8732D" />
+              <stop stopColor="#F2CC25" />
+              <stop offset="1" stopColor="#B8732D" />
             </linearGradient>
             <linearGradient id="paint1_linear_1945_76" x1="9.34859" y1="3" x2="9.34859" y2="14.5683" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F2CC25" />
-              <stop offset="1" stop-color="#B8732D" />
+              <stop stopColor="#F2CC25" />
+              <stop offset="1" stopColor="#B8732D" />
             </linearGradient>
           </defs>
         </svg>

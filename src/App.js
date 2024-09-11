@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PageWrapper from './components/PageWrapper';
 import Home from './pages/Home';
 import User from './pages/User';
@@ -14,14 +14,14 @@ const App = () => (
     <Helmet titleTemplate="Hacktoberfest Checker" />
     <PageWrapper>
       <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/checker" component={Checker} />
-          <Route exact path="/user/:username" component={User} />
-          <Route exact path="/me" component={Me} />
-          <Route exact path="/guidelines" component={Guidelines} />
-          <Route component={NotFound} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/checker" element={<Checker />} />
+          <Route path="/user/:username" element={<User />} />
+          <Route path="/me" element={<Me />} />
+          <Route path="/guidelines" element={<Guidelines />} />
+          <Route path="*" element={<NotFound />} /> {/* Updated to catch-all route */}
+        </Routes>
       </Router>
     </PageWrapper>
   </Fragment>

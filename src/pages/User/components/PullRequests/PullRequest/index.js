@@ -16,12 +16,11 @@ const PullRequest = ({ pullRequest }) => (
   </div>
 );
 
-// TODO: Convert to camelCase and enable camelcase rule.
 PullRequest.propTypes = {
   pullRequest: PropTypes.shape({
     number: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
-    created_at: PropTypes.string.isRequired, // eslint-disable-line camelcase
+    created_at: PropTypes.string.isRequired,
     state: PropTypes.string.isRequired,
     user: PropTypes.shape({
       login: PropTypes.string.isRequired,
