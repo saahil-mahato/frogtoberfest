@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- Node v16+
+- Node v20+
 
 ## Running the App
 
