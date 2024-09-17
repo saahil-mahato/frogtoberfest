@@ -7,7 +7,7 @@ import Icon4 from 'assets/images/icon-4.svg';
 import Icon5 from 'assets/images/icon-5.svg';
 import Icon6 from 'assets/images/icon-6.svg';
 import Icon7 from 'assets/images/icon-7.svg';
-import Img1 from 'assets/images/img-1.png';
+import Img1 from 'assets/images/logo-2024.png';
 import Img2 from 'assets/images/img-2.jpg';
 import Img3 from 'assets/images/img-3.jpg';
 import Img4 from 'assets/images/img-4.jpg';
@@ -97,7 +97,7 @@ const Home = () => {
 
               </div>
               <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>5</span>
+                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>6</span>
                   YEARS
                 </h1>
                 <p className='mb-10x text-base text-md-sm mx-auto mx-lg-0x banner_text'>Open Source Hackathon for Leapfroggers and
@@ -106,7 +106,7 @@ const Home = () => {
                 {/* <SiteTimer /> */}
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
-                  <a className='text-black' href="https://frog.ly/frogtoberfest2023" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
+                  <a className='text-black' href="https://frog.ly/frogtoberfest2024" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
                   <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer"><button className='btn btn-link'>Leaderboard</button></a>
                 </div>
               </div>
@@ -143,10 +143,10 @@ const Home = () => {
 
                 <div className="col-12 col-md-4">
                   <figure>
-                    <img className='mb-4x' src={Icon3} alt="Any time between Oct 1 to Oct 31, 2023." />
+                    <img className='mb-4x' src={Icon3} alt="Any time between Oct 1 to Oct 31, 2024." />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
                       <h3 className='mb-2x font-figtree color-white--base text-lg'>When</h3>
-                      <p>Any time between Oct 1 to Oct 31, 2023.</p>
+                      <p>Any time between Oct 1 to Oct 31, 2024.</p>
                     </figcaption>
                   </figure>
                 </div>
@@ -164,7 +164,7 @@ const Home = () => {
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
                   <img className='mb-md-6x' src={Icon4} alt="Create 8 pull requests" />
-                  <p className='leading-6 font-normal'>Create 8 pull requests (PRs) between Oct 1 to Oct 31, 2023.</p>
+                  <p className='leading-6 font-normal'>Create 8 pull requests (PRs) between Oct 1 to Oct 31, 2024.</p>
                 </div>
               </div>
 
@@ -202,38 +202,24 @@ const Home = () => {
                   <div className="col-12 col-md-6">
                     <div
                       className="bg-grey--light p-10x radius-base h-100 d-flex align-items-center justify-content-center flex-column">
-                      <div className="font-antonio text-huge lh-normal font-chakra">200+</div>
+                      <div className="font-antonio text-huge lh-normal font-chakra">360+</div>
                       <p className='text-lg white-space-nowrap font-chakra'>Participants</p>
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
                     <div className="row gutter-4x flex-wrap">
-                      <div className="col-6">
+                      <div className="col-12">
                         <div
                           className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">632</div>
-                          <div className="white-space-nowrap font-chakra">Total PR</div>
+                          <div className="text-xl font-chakra">1500+</div>
+                          <div className="white-space-nowrap font-chakra">Total PRs</div>
                         </div>
                       </div>
-                      <div className="col-6">
+                      <div className="col-12">
                         <div
                           className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">500+</div>
-                          <div className="white-space-nowrap font-chakra">Merge PR</div>
-                        </div>
-                      </div>
-                      <div className="col-6">
-                        <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">71</div>
-                          <div className="white-space-nowrap font-chakra font-chakra-peth">Goodies</div>
-                        </div>
-                      </div>
-                      <div className="col-6">
-                        <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">5</div>
-                          <div className="white-space-nowrap font-chakra">Events</div>
+                          <div className="text-xl font-chakra">1200+</div>
+                          <div className="white-space-nowrap font-chakra">Merged PRs</div>
                         </div>
                       </div>
                     </div>
@@ -424,7 +410,7 @@ const Home = () => {
                 <p className="accordion-content-description mr-lg-15x">
                   The judging criteria for Frogtober are primarily based on active contributions to the event.
                   <ol className='pl-10'>
-                    <li>Create 8 pull requests on GitHub between October 1 and October 31, 2023</li>
+                    <li>Create 8 pull requests on GitHub between October 1 and October 31, 2024</li>
                     <li>At least 5 pull requests should be in repositories not owned by you</li>
                     <li>Ensure all PRs are valid.</li>
                   </ol>
