@@ -98,8 +98,8 @@ const Home = () => {
 
               </div>
               <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-black--base fw-300 font-racing'>
-                  Embracing<br />Open Source
+                <h1 className='banner__title color-black--base fw-300 mb-6'>
+                  Embracing Open Source
                 </h1>
                 <p className='mb-10x text-base color-black--base text-md-sm mx-auto mx-lg-0x banner_text'>A month-long challenge to encourage you to contribute to open source projects.</p>
 
@@ -117,7 +117,7 @@ const Home = () => {
 
         <section className='text-center py-16x py-md-20x bg-grey--base'>
           <div className="container">
-            <h2 className='mb-14x font-racing'>WHAT YOU NEED TO KNOW</h2>
+            <h2 className='mb-14x'>WHAT YOU NEED TO KNOW</h2>
 
             <div className="max-w-lg-985 mx-auto">
               <div className="row gutter-y-12x gutter-y-lg-0x">
@@ -125,7 +125,7 @@ const Home = () => {
                   <figure>
                     <img className='mb-4x' src={Icon1} alt="Open Source Hackathon for Leapfroggers and LeapNetwork" />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
-                      <h3 className='mb-2x font-figtree color-white--base text-lg'>Who</h3>
+                      <h3 className='mb-2x color-white--base text-lg'>Who</h3>
                       <p>Open Source Hackathon for Leapfroggers and LeapNetwork</p>
                     </figcaption>
                   </figure>
@@ -135,7 +135,7 @@ const Home = () => {
                   <figure>
                     <img className='mb-4x' src={Icon2} alt="Create 8 pull requests (PR)" />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
-                      <h3 className='mb-2x font-figtree color-white--base text-lg'>How</h3>
+                      <h3 className='mb-2x color-white--base text-lg'>How</h3>
                       <p>Create 8 pull requests (PR)</p>
                     </figcaption>
                   </figure>
@@ -145,7 +145,7 @@ const Home = () => {
                   <figure>
                     <img className='mb-4x' src={Icon3} alt="Any time between Oct 1 to Oct 31, 2024." />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
-                      <h3 className='mb-2x font-figtree color-white--base text-lg'>When</h3>
+                      <h3 className='mb-2x color-white--base text-lg'>When</h3>
                       <p>Any time between Oct 1 to Oct 31, 2024.</p>
                     </figcaption>
                   </figure>
@@ -157,7 +157,7 @@ const Home = () => {
 
         <section id='participation' className='py-16x py-md-34x'>
           <div className="container">
-            <h2 className='mb-8x font-racing'>Participation</h2>
+            <h2 className='mb-8x'>Participation</h2>
             <p className='mb-6x'>The challenge is quite simple:</p>
 
             <div className="row gutter-y-6x gutter-x-lg-13x">
@@ -194,7 +194,7 @@ const Home = () => {
 
         <section className='py-16x py-md-20x bg-grey--base'>
           <div className="container">
-            <h2 className='mb-8x font-racing'>Past Stats</h2>
+            <h2 className='mb-8x'>Past Stats</h2>
 
             <div className="row align-items-center">
               <div className="col-lg-7 mb-6x mb-lg-0x">
@@ -202,8 +202,8 @@ const Home = () => {
                   <div className="col-12 col-md-6">
                     <div
                       className="stat-card p-10x radius-base h-100 d-flex align-items-center justify-content-center flex-column">
-                      <div className="font-antonio text-huge lh-normal font-chakra">360+</div>
-                      <p className='text-lg white-space-nowrap font-chakra'>Participants</p>
+                      <div className="text-huge lh-normal">360+</div>
+                      <p className='text-lg white-space-nowrap'>Participants</p>
                     </div>
                   </div>
                   <div className="col-6 col-md-6">
@@ -211,15 +211,15 @@ const Home = () => {
                       <div className="col-6">
                         <div
                           className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">1500+</div>
-                          <div className="white-space-nowrap font-chakra">Total PRs</div>
+                          <div className="text-xl">1500+</div>
+                          <div className="white-space-nowrap">Total PRs</div>
                         </div>
                       </div>
                       <div className="col-6">
                         <div
                           className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">1200+</div>
-                          <div className="white-space-nowrap font-chakra">Merged PRs</div>
+                          <div className="text-xl">1200+</div>
+                          <div className="white-space-nowrap">Merged PRs</div>
                         </div>
                       </div>
                     </div>
@@ -236,7 +236,7 @@ const Home = () => {
 
         <section className='py-16x py-md-34x'>
           <div className="container">
-            <h2 className='mb-8x font-racing'>Leaps & Bonds</h2>
+            <h2 className='mb-8x'>Leaps & Bonds</h2>
             <p className='mb-14x text-lg max-w-985 lh-120'>Whether it&apos;s your first time or the umpteenth, join the conversation
               as we
               discuss all
@@ -276,7 +276,7 @@ const Home = () => {
         <section id='swag' className='py-16x py-md-20x bg-grey--base'>
           <div className="container">
             <div className="max-w-665 mb-8x">
-              <h2 className='mb-8x font-racing'>SWAG for you</h2>
+              <h2 className='mb-8x'>SWAG for you</h2>
               <p className='text-lg mb-6x'>Frogtoberfest SWAG is waiting for you! Like every Frog-toberfest, we&apos;re hopping back
                 with
                 exclusive merch and
@@ -461,7 +461,7 @@ const Home = () => {
             <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
               <div className="max-w-lg-665">
                 <div className="">
-                  <h3 className='mb-4x font-racing'>Don&apos;t miss out on any updates</h3>
+                  <h3 className='mb-4x'>Don&apos;t miss out on any updates</h3>
                   <p>Join our thriving community of tech professionals!</p>
                 </div>
 

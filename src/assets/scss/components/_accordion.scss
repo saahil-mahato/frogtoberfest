@@ -2,10 +2,12 @@
 	@include mq('lg') {
 		max-width: 10 00px;
 	}
+
 	.accordion-content {
 		overflow: hidden;
 		padding: 0 getSpacing('4x');
 		border-bottom: 1px solid getColor('primary.base');
+
 		header {
 			padding-top: getSpacing('6x');
 			padding-bottom: getSpacing('4x');
@@ -26,7 +28,6 @@
 		&-title {
 			font-size: rem(24);
 			font-weight: 500;
-			font-family: $font-inter;
 		}
 
 		&-description {
@@ -34,7 +35,8 @@
 			font-size: 1rem;
 			transition: height 0.4s ease;
 		}
-		&:first-child{
+
+		&:first-child {
 			border-top: 1px solid getColor('primary.base');
 		}
 	}
