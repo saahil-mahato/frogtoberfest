@@ -44,6 +44,15 @@
 		}
 	}
 
+	&.btn-join {
+		background: $primary;
+		color: $black;
+
+		&:hover {
+			background: darken($primary, 10%);
+		}
+	}
+
 	@each $theme-color, $color in $theme-colors {
 		&-#{$theme-color} {
 			background-color: $color;

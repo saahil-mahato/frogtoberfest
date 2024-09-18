@@ -482,10 +482,8 @@ const Home = () => {
             <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
               <div className="max-w-lg-665">
                 <div className="">
-                  <h3 className='mb-4x font-racing'>Subscribe to our newsletter</h3>
-                  <p>Join our newsletter community to receive fresh insights, special offers, and exciting updates right
-                    in
-                    your inbox. Don&apos;t miss out – subscribe now!</p>
+                  <h3 className='mb-4x font-racing'>Don&apos;t miss out on any updates</h3>
+                  <p>Join our thriving community of tech professionals!</p>
                 </div>
 
                 <figure className='d-none d-md-block mt-10x'>
@@ -499,14 +497,9 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-6 col-xl-5">
               <div className="">
-                <div className="ml-form-embed"
-                  data-account="738785:d6l2h0j5t4"
-                  data-form="5983064:r5a2f4">
+                <div className="mb-16">
+                  <a href="https://career.lftechnology.com/o/leapnetwork" target='_blank' rel="noopener noreferrer"><button className='btn btn-join'>Join Now</button></a>
                 </div>
-                {/* <form className='form-subscribe mb-10x' action="">
-                  <input className='form-control' type="email" placeholder='Enter you email here' />
-                  <input className='form-submit' type="submit" value="Subscribe" />
-                </form> */}
 
                 <div className="">
                   <p className='mb-4x fw-300'>Follow us at our socials</p>
