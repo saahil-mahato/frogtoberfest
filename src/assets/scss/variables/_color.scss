@@ -2,35 +2,29 @@
 $white: #ffffff !default;
 $black: #000000 !default;
 
-$primary: #fdcd13 !default;
+$primary: #9ee83f !default;
 
 $colorMap: (
-	'white': (
-		'base': $white,
+	'white': ('base': $white,
 	),
-	'black': (
-		'base': $black,
+	'black': ('base': $black,
 	),
-	'primary': (
-		'base': $primary,
+	'primary': ('base': $primary,
 		'light': #544406,
 	),
 
-	'grey': (
-		'dark': #08050b,
+	'grey': ('dark': #08050b,
 		'base': #201d19,
 		'light': #2b2722,
 		'10':#4E473E,
 		'20':#201D19,
 	),
 
-	'text': (
-		'dark': #332904,
+	'text': ('dark': #332904,
 		'base': #d7d7d7,
 		'input': #989898,
 	),
-	'yellow':(
-		'10':#FFF8E0,
+	'yellow':('10':#FFF8E0,
 		'20':#FFE46F,
 		'30':#FDD330,
 	)

@@ -16,7 +16,8 @@ import Img6 from 'assets/images/img-6.png';
 import Img7 from 'assets/images/img-7.png';
 import Img8 from 'assets/images/img-8.png';
 import Img9 from 'assets/images/img-9.png';
-import Logo from 'assets/images/logo.svg';
+import Logo from 'assets/images/logo-open-source-2024.png';
+import LogoWhite from 'assets/images/leapfrog-opensource-logo.png';
 import SiteHeader from 'components/SiteHeader';
 // import SiteTimer from 'components/SiteTimer';
 
@@ -97,17 +98,16 @@ const Home = () => {
 
               </div>
               <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>6</span>
-                  YEARS
+                <h1 className='banner__title color-black--base fw-300 font-racing'>
+                  Embracing<br />Open Source
                 </h1>
-                <p className='mb-10x text-base text-md-sm mx-auto mx-lg-0x banner_text'>Open Source Hackathon for Leapfroggers and
-                  LeapNetwork</p>
+                <p className='mb-10x text-base color-black--base text-md-sm mx-auto mx-lg-0x banner_text'>A month-long challenge to encourage you to contribute to open source projects.</p>
 
                 {/* <SiteTimer /> */}
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
-                  <a className='text-black' href="https://frog.ly/frogtoberfest2024" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
-                  <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer"><button className='btn btn-link'>Leaderboard</button></a>
+                  <a className='text-black' href="https://frog.ly/frogtoberfest-2024" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
+                  <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer"><button className='btn btn-link color-black--base'>Leaderboard</button></a>
                 </div>
               </div>
 
@@ -201,23 +201,23 @@ const Home = () => {
                 <div className="row gutter-5x">
                   <div className="col-12 col-md-6">
                     <div
-                      className="bg-grey--light p-10x radius-base h-100 d-flex align-items-center justify-content-center flex-column">
+                      className="stat-card p-10x radius-base h-100 d-flex align-items-center justify-content-center flex-column">
                       <div className="font-antonio text-huge lh-normal font-chakra">360+</div>
                       <p className='text-lg white-space-nowrap font-chakra'>Participants</p>
                     </div>
                   </div>
-                  <div className="col-12 col-md-6">
-                    <div className="row gutter-4x flex-wrap">
-                      <div className="col-12">
+                  <div className="col-6 col-md-6">
+                    <div className="row gutter-4x flex-column">
+                      <div className="col-6">
                         <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
+                          className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
                           <div className="text-xl font-chakra">1500+</div>
                           <div className="white-space-nowrap font-chakra">Total PRs</div>
                         </div>
                       </div>
-                      <div className="col-12">
+                      <div className="col-6">
                         <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
+                          className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
                           <div className="text-xl font-chakra">1200+</div>
                           <div className="white-space-nowrap font-chakra">Merged PRs</div>
                         </div>
@@ -476,7 +476,7 @@ const Home = () => {
 
       </div>
 
-      <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
+      <footer className='pt-16x pt-md-20x pb-10x bg-primary--dark'>
         <div className="container">
           <div className="row gutter-x-md-11x">
             <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
@@ -489,7 +489,7 @@ const Home = () => {
                 </div>
 
                 <figure className='d-none d-md-block mt-10x'>
-                  <img src={Logo} alt="Frogtoberfest Logo" />
+                  <img src={LogoWhite} alt="Frogtoberfest Logo" />
                 </figure>
 
                 <div className='mt-9x initiatives'>

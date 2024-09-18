@@ -5,17 +5,19 @@
 		left: 0;
 		width: 100%;
 		z-index: 99;
-		background: getColor('grey.base');
+		background: $primary;
 		padding: 12px !important;
 		animation: slideIn 0.6s ease-in-out forwards;
 	}
 
-	@include e(banner_text){
-		margin-top:-2rem;
-		@include mqmax('lg'){
+	@include e(banner_text) {
+		margin-top: -2rem;
+
+		@include mqmax('lg') {
 			margin-top: 1rem;
 		}
-		@include mqmax('md'){
+
+		@include mqmax('md') {
 			margin-top: 1rem;
 		}
 	}
@@ -23,6 +25,7 @@
 
 .logo {
 	max-width: 175px;
+
 	@include mq('md') {
 		max-width: fit-content;
 	}

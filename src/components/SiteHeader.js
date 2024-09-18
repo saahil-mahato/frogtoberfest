@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
-import Logo from 'assets/images/logo.svg';
+import Logo from 'assets/images/logo-open-source-2024.png';
 
 const SiteHeader = () => {
     useEffect(() => {

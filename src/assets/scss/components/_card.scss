@@ -7,21 +7,26 @@
 	line-height: normal;
 	height: 100%;
 
-	@include m(bg-yellow){
+	@include m(bg-yellow) {
 		background: #FFF8E0;
-box-shadow: 0px 4px 4px 0px rgba(255, 228, 111, 0.25);
+		box-shadow: 0px 4px 4px 0px rgba(255, 228, 111, 0.25);
 	}
 
-	@include e(title){
-		color:getColor('black.base');
+	@include e(title) {
+		color: getColor('black.base');
 	}
 
-	@include e(text){
-		color:getColor('black.base');
+	@include e(text) {
+		color: getColor('black.base');
 		font-weight: 300;
 	}
 
 	@include mq('md') {
 		display: block;
 	}
+}
+
+.stat-card {
+	background-color: $primary;
+	color: $black;
 }
