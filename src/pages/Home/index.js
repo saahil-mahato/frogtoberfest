@@ -455,27 +455,6 @@ const Home = () => {
         </section>
       </main>
 
-      <div className='antenna'>
-        <svg width="130" height="41" viewBox="0 0 130 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" stroke-width="3.0009" />
-          <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
-          <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" stroke-width="3.0009" />
-          <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
-          <defs>
-            <linearGradient id="paint0_linear_1945_76" x1="5.78414" y1="0" x2="5.78414" y2="11.5683" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F2CC25" />
-              <stop offset="1" stop-color="#B8732D" />
-            </linearGradient>
-            <linearGradient id="paint1_linear_1945_76" x1="9.34859" y1="3" x2="9.34859" y2="14.5683" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F2CC25" />
-              <stop offset="1" stop-color="#B8732D" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-
-      </div>
-
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--dark'>
         <div className="container">
           <div className="row gutter-x-md-11x">
