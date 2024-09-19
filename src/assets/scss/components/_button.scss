@@ -19,18 +19,17 @@
 		color: $white;
 
 		&:hover {
-			background: getColor('white.base');
+			background: $buttonHover;
 			color: getColor('black.base');
 		}
 	}
 
 	&.btn-check {
-		background: #304810;
+		background: $black;
 		color: $white;
 
 		&:hover {
-			background: getColor('white.base');
-			color: getColor('black.base');
+			background: $buttonHover;
 		}
 	}
 
@@ -39,7 +38,7 @@
 		color: getColor('black.base');
 
 		&:hover {
-			background: getColor('grey.light');
+			background: #86C931;
 			color: getColor('white.base');
 		}
 	}

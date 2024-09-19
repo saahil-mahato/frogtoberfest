@@ -10,6 +10,9 @@ const Checker = () => (
     <SiteHeader />
     <div className='banner banner--img-fixed'>
       <SiteTitle>Frogtoberfest</SiteTitle>
+      <div className="flex justify-center">
+        <p className='text-black fw-700'>Stay tuned for Frogtoberfest 2024 !!</p>
+      </div>
       <UsernameForm />
       <SiteDetails />
     </div>

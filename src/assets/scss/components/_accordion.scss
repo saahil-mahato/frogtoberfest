@@ -15,13 +15,21 @@
 			cursor: pointer;
 		}
 
+		&:hover {
+			background-color: rgba(158, 232, 63, 0.05);
+		}
+
 		&.is-open {
 			padding-bottom: 10px;
-			background-color: getColor('grey.20');
+			background-color: rgba(158, 232, 63, 0.05);
 
 			.icon {
 				color: getColor('primary.base');
 				border-color: getColor('primary.base');
+			}
+
+			.accordion-content-title {
+				color: $primary;
 			}
 		}
 
