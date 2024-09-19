@@ -16,8 +16,8 @@ import Img6 from 'assets/images/img-6.png';
 import Img7 from 'assets/images/img-7.png';
 import Img8 from 'assets/images/img-8.png';
 import Img9 from 'assets/images/img-9.png';
-import Logo from 'assets/images/logo-open-source-2024.png';
 import LogoWhite from 'assets/images/leapfrog-opensource-logo.png';
+import Link from 'assets/images/link.svg';
 import SiteHeader from 'components/SiteHeader';
 // import SiteTimer from 'components/SiteTimer';
 
@@ -206,18 +206,16 @@ const Home = () => {
                       <p className='text-lg white-space-nowrap'>Participants</p>
                     </div>
                   </div>
-                  <div className="col-6 col-md-6">
-                    <div className="row gutter-4x flex-column">
+                  <div className="col-12 col-md-6">
+                    <div className="row gutter-4x stat-cards">
                       <div className="col-6">
-                        <div
-                          className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
+                        <div className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
                           <div className="text-xl">1500+</div>
                           <div className="white-space-nowrap">Total PRs</div>
                         </div>
                       </div>
                       <div className="col-6">
-                        <div
-                          className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
+                        <div className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
                           <div className="text-xl">1200+</div>
                           <div className="white-space-nowrap">Merged PRs</div>
                         </div>
@@ -460,11 +458,13 @@ const Home = () => {
           <div className="row gutter-x-md-11x">
             <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
               <div className="max-w-lg-665">
-                <div className="">
-                  <h3 className='mb-4x'>Don&apos;t miss out on any updates</h3>
+                <div className="career">
+                  <h3 className='mb-4x'>JOIN OUR TEAM</h3>
                   <p>Join our thriving community of tech professionals!</p>
+                  <p>
+                    <a className="text-primary" href="https://career.lftechnology.com/o/leapnetwork" target='_blank' rel="noopener noreferrer">Visit our career page <img className="mt-2" src={Link} alt="Link" /></a>
+                  </p>
                 </div>
-
                 <figure className='d-none d-md-block mt-10x'>
                   <img src={LogoWhite} alt="Frogtoberfest Logo" />
                 </figure>
@@ -476,11 +476,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-6 col-xl-5">
               <div className="">
-                <div className="mb-16">
-                  <a href="https://career.lftechnology.com/o/leapnetwork" target='_blank' rel="noopener noreferrer"><button className='btn btn-join'>Join Now</button></a>
-                </div>
-
-                <div className="">
+                <div className="mt-8 md:mt-0">
                   <p className='mb-4x fw-300'>Follow us at our socials</p>
                   <ul className='social-icons d-flex gap-6x'>
                     <li><a href="https://www.facebook.com/lftechnology?mibextid=LQQJ4d" target='_blank' rel="noopener noreferrer">
@@ -490,14 +486,9 @@ const Home = () => {
                     <li><a href="https://instagram.com/lftechnology?igshid=MzRlODBiNWFlZA==" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-instagram"></i></a></li>
                   </ul>
                 </div>
-
-                <figure className='d-block d-md-none mt-10x hide-sm'>
-                  <img src={Logo} alt="Frogtoberfest Logo" />
+                <figure className='block md:hidden mt-10'>
+                  <img src={LogoWhite} alt="Frogtoberfest Logo" />
                 </figure>
-                <div className='mt-9x initiatives initiatives--mobile-view'>
-                  <p>Initiative of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
-                </div>
-
               </div>
             </div>
           </div>

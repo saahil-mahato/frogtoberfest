@@ -30,3 +30,17 @@
 	background-color: $primary;
 	color: $black;
 }
+
+.stat-cards .col-6 {
+	flex: 0 0 50%;
+}
+
+@media (min-width: 768px) {
+	.stat-cards {
+		flex-direction: column;
+	}
+
+	.stat-cards .col-6 {
+		flex: 0 0 100%;
+	}
+}

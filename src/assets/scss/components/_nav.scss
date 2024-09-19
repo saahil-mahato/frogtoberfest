@@ -3,7 +3,7 @@
 		position: fixed;
 		width: 300px;
 		height: 100vh;
-		background-color: getColor('grey.base');
+		background-color: $primary;
 		overflow-x: hidden;
 		transition: right 0.3s;
 		top: 0;
