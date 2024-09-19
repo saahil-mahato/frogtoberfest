@@ -23,3 +23,12 @@
 		}
 	}
 }
+
+@media (min-width: 576px) {
+	.responsive-checker {
+		max-width: 700px;
+		/* Sets a maximum width for the input */
+		width: 100%;
+		/* Ensures the input takes full width of its parent */
+	}
+}

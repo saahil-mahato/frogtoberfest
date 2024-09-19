@@ -92,13 +92,14 @@ class UsernameForm extends Component {
 
         <form
           className="flex mx-auto w-3/4 sm:w-1/2"
-          style={{ boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)' }}
           onSubmit={this.handleSubmit}
         >
-          <UsernameInput value={this.state.username} onChange={this.handleUsernameChange} />
-          <CheckButton />
-        </form>
-      </div>
+          <div className='flex justify-center w-full'>
+            <UsernameInput value={this.state.username} onChange={this.handleUsernameChange} />
+            <CheckButton />
+          </div>
+        </form >
+      </div >
     );
   };
 }

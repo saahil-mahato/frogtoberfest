@@ -58,6 +58,12 @@
 		}
 	}
 
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 32px;
+		}
+	}
+
 	@include e('sub-title') {
 		max-width: 500px;
 	}
