@@ -7,7 +7,7 @@ import Icon4 from 'assets/images/icon-4.svg';
 import Icon5 from 'assets/images/icon-5.svg';
 import Icon6 from 'assets/images/icon-6.svg';
 import Icon7 from 'assets/images/icon-7.svg';
-import Img1 from 'assets/images/img-1.png';
+import Img1 from 'assets/images/logo-2024.png';
 import Img2 from 'assets/images/img-2.jpg';
 import Img3 from 'assets/images/img-3.jpg';
 import Img4 from 'assets/images/img-4.jpg';
@@ -16,7 +16,8 @@ import Img6 from 'assets/images/img-6.png';
 import Img7 from 'assets/images/img-7.png';
 import Img8 from 'assets/images/img-8.png';
 import Img9 from 'assets/images/img-9.png';
-import Logo from 'assets/images/logo.svg';
+import LogoWhite from 'assets/images/leapfrog-opensource-logo.png';
+import Link from 'assets/images/link.svg';
 import SiteHeader from 'components/SiteHeader';
 // import SiteTimer from 'components/SiteTimer';
 
@@ -97,17 +98,16 @@ const Home = () => {
 
               </div>
               <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-white--base fw-300 font-racing'>CELEBRATING <span className='color-primary--base font-chakra'>5</span>
-                  YEARS
+                <h1 className='banner__title color-black--base fw-700 mb-6'>
+                  Embracing Open Source
                 </h1>
-                <p className='mb-10x text-base text-md-sm mx-auto mx-lg-0x banner_text'>Open Source Hackathon for Leapfroggers and
-                  LeapNetwork</p>
+                <p className='mb-10x text-base color-black--base text-md-sm mx-auto mx-lg-0x banner_text fw-550'>A month-long challenge to encourage you to contribute to open source projects.</p>
 
                 {/* <SiteTimer /> */}
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
-                  <a className='text-black' href="https://frog.ly/frogtoberfest2023" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
-                  <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer"><button className='btn btn-link'>Leaderboard</button></a>
+                  <a className='text-black' href="https://frog.ly/frogtoberfest-2024" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
+                  <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer"><button className='btn btn-link color-black--base'>Leaderboard</button></a>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ const Home = () => {
 
         <section className='text-center py-16x py-md-20x bg-grey--base'>
           <div className="container">
-            <h2 className='mb-14x font-racing'>WHAT YOU NEED TO KNOW</h2>
+            <h2 className='mb-14x'>WHAT YOU NEED TO KNOW</h2>
 
             <div className="max-w-lg-985 mx-auto">
               <div className="row gutter-y-12x gutter-y-lg-0x">
@@ -125,7 +125,7 @@ const Home = () => {
                   <figure>
                     <img className='mb-4x' src={Icon1} alt="Open Source Hackathon for Leapfroggers and LeapNetwork" />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
-                      <h3 className='mb-2x font-figtree color-white--base text-lg'>Who</h3>
+                      <h3 className='mb-2x color-white--base text-lg'>Who</h3>
                       <p>Open Source Hackathon for Leapfroggers and LeapNetwork</p>
                     </figcaption>
                   </figure>
@@ -135,7 +135,7 @@ const Home = () => {
                   <figure>
                     <img className='mb-4x' src={Icon2} alt="Create 8 pull requests (PR)" />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
-                      <h3 className='mb-2x font-figtree color-white--base text-lg'>How</h3>
+                      <h3 className='mb-2x color-white--base text-lg'>How</h3>
                       <p>Create 8 pull requests (PR)</p>
                     </figcaption>
                   </figure>
@@ -143,10 +143,10 @@ const Home = () => {
 
                 <div className="col-12 col-md-4">
                   <figure>
-                    <img className='mb-4x' src={Icon3} alt="Any time between Oct 1 to Oct 31, 2023." />
+                    <img className='mb-4x' src={Icon3} alt="Any time between Oct 1 to Oct 31, 2024." />
                     <figcaption className='max-w-300 mx-auto max-w-lg-auto'>
-                      <h3 className='mb-2x font-figtree color-white--base text-lg'>When</h3>
-                      <p>Any time between Oct 1 to Oct 31, 2023.</p>
+                      <h3 className='mb-2x color-white--base text-lg'>When</h3>
+                      <p>Any time between Oct 1 to Oct 31, 2024.</p>
                     </figcaption>
                   </figure>
                 </div>
@@ -157,14 +157,14 @@ const Home = () => {
 
         <section id='participation' className='py-16x py-md-34x'>
           <div className="container">
-            <h2 className='mb-8x font-racing'>Participation</h2>
+            <h2 className='mb-8x'>Participation</h2>
             <p className='mb-6x'>The challenge is quite simple:</p>
 
             <div className="row gutter-y-6x gutter-x-lg-13x">
               <div className="col-12 col-md-6 col-lg-3">
                 <div className="card">
                   <img className='mb-md-6x' src={Icon4} alt="Create 8 pull requests" />
-                  <p className='leading-6 font-normal'>Create 8 pull requests (PRs) between Oct 1 to Oct 31, 2023.</p>
+                  <p className='leading-6 font-normal'>Create 8 pull requests (PRs) between Oct 1 to Oct 31, 2024.</p>
                 </div>
               </div>
 
@@ -194,46 +194,30 @@ const Home = () => {
 
         <section className='py-16x py-md-20x bg-grey--base'>
           <div className="container">
-            <h2 className='mb-8x font-racing'>Past Stats</h2>
+            <h2 className='mb-8x'>Past Stats</h2>
 
             <div className="row align-items-center">
               <div className="col-lg-7 mb-6x mb-lg-0x">
                 <div className="row gutter-5x">
                   <div className="col-12 col-md-6">
                     <div
-                      className="bg-grey--light p-10x radius-base h-100 d-flex align-items-center justify-content-center flex-column">
-                      <div className="font-antonio text-huge lh-normal font-chakra">200+</div>
-                      <p className='text-lg white-space-nowrap font-chakra'>Participants</p>
+                      className="stat-card p-10x radius-base h-100 d-flex align-items-center justify-content-center flex-column">
+                      <div className="text-huge lh-normal">360+</div>
+                      <p className='text-lg white-space-nowrap'>Participants</p>
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
-                    <div className="row gutter-4x flex-wrap">
+                    <div className="row gutter-4x stat-cards">
                       <div className="col-6">
-                        <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">632</div>
-                          <div className="white-space-nowrap font-chakra">Total PR</div>
+                        <div className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
+                          <div className="text-xl">1500+</div>
+                          <div className="white-space-nowrap">Total PRs</div>
                         </div>
                       </div>
                       <div className="col-6">
-                        <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">500+</div>
-                          <div className="white-space-nowrap font-chakra">Merge PR</div>
-                        </div>
-                      </div>
-                      <div className="col-6">
-                        <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">71</div>
-                          <div className="white-space-nowrap font-chakra font-chakra-peth">Goodies</div>
-                        </div>
-                      </div>
-                      <div className="col-6">
-                        <div
-                          className="bg-grey--light p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
-                          <div className="text-xl font-chakra">5</div>
-                          <div className="white-space-nowrap font-chakra">Events</div>
+                        <div className="stat-card p-10x radius-base h-145 d-flex align-items-center justify-content-center flex-column">
+                          <div className="text-xl">1200+</div>
+                          <div className="white-space-nowrap">Merged PRs</div>
                         </div>
                       </div>
                     </div>
@@ -250,7 +234,7 @@ const Home = () => {
 
         <section className='py-16x py-md-34x'>
           <div className="container">
-            <h2 className='mb-8x font-racing'>Leaps & Bonds</h2>
+            <h2 className='mb-8x'>Leaps & Bonds</h2>
             <p className='mb-14x text-lg max-w-985 lh-120'>Whether it&apos;s your first time or the umpteenth, join the conversation
               as we
               discuss all
@@ -290,7 +274,7 @@ const Home = () => {
         <section id='swag' className='py-16x py-md-20x bg-grey--base'>
           <div className="container">
             <div className="max-w-665 mb-8x">
-              <h2 className='mb-8x font-racing'>SWAG for you</h2>
+              <h2 className='mb-8x'>SWAG for you</h2>
               <p className='text-lg mb-6x'>Frogtoberfest SWAG is waiting for you! Like every Frog-toberfest, we&apos;re hopping back
                 with
                 exclusive merch and
@@ -424,7 +408,7 @@ const Home = () => {
                 <p className="accordion-content-description mr-lg-15x">
                   The judging criteria for Frogtober are primarily based on active contributions to the event.
                   <ol className='pl-10'>
-                    <li>Create 8 pull requests on GitHub between October 1 and October 31, 2023</li>
+                    <li>Create 8 pull requests on GitHub between October 1 and October 31, 2024</li>
                     <li>At least 5 pull requests should be in repositories not owned by you</li>
                     <li>Ensure all PRs are valid.</li>
                   </ol>
@@ -469,41 +453,20 @@ const Home = () => {
         </section>
       </main>
 
-      <div className='antenna'>
-        <svg width="130" height="41" viewBox="0 0 130 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M24.5645 35.5L88.9418 8.78516H116.873" stroke="#544406" stroke-width="3.0009" />
-          <circle cx="5.78414" cy="5.78414" r="7.28458" transform="matrix(-1 0 0 1 126.766 3)" fill="url(#paint0_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
-          <path d="M103.564 35.5L41.3883 8.78516H13.457" stroke="#544406" stroke-width="3.0009" />
-          <circle cx="9.34859" cy="8.78414" r="7.28458" fill="url(#paint1_linear_1945_76)" stroke="#544406" stroke-width="3.0009" />
-          <defs>
-            <linearGradient id="paint0_linear_1945_76" x1="5.78414" y1="0" x2="5.78414" y2="11.5683" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F2CC25" />
-              <stop offset="1" stop-color="#B8732D" />
-            </linearGradient>
-            <linearGradient id="paint1_linear_1945_76" x1="9.34859" y1="3" x2="9.34859" y2="14.5683" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#F2CC25" />
-              <stop offset="1" stop-color="#B8732D" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-
-      </div>
-
-      <footer className='pt-16x pt-md-20x pb-10x bg-primary--light'>
+      <footer className='pt-16x pt-md-20x pb-10x bg-primary--dark'>
         <div className="container">
           <div className="row gutter-x-md-11x">
             <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
               <div className="max-w-lg-665">
-                <div className="">
-                  <h3 className='mb-4x font-racing'>Subscribe to our newsletter</h3>
-                  <p>Join our newsletter community to receive fresh insights, special offers, and exciting updates right
-                    in
-                    your inbox. Don&apos;t miss out – subscribe now!</p>
+                <div className="career">
+                  <h3 className='mb-4x'>JOIN OUR TEAM</h3>
+                  <p>Join our thriving community of tech professionals!</p>
+                  <p>
+                    <a className="text-primary" href="https://career.lftechnology.com/o/leapnetwork" target='_blank' rel="noopener noreferrer">Visit our career page <img className="mt-2" src={Link} alt="Link" /></a>
+                  </p>
                 </div>
-
                 <figure className='d-none d-md-block mt-10x'>
-                  <img src={Logo} alt="Frogtoberfest Logo" />
+                  <img src={LogoWhite} alt="Frogtoberfest Logo" />
                 </figure>
 
                 <div className='mt-9x initiatives'>
@@ -513,16 +476,7 @@ const Home = () => {
             </div>
             <div className="col-12 col-md-6 col-xl-5">
               <div className="">
-                <div className="ml-form-embed"
-                  data-account="738785:d6l2h0j5t4"
-                  data-form="5983064:r5a2f4">
-                </div>
-                {/* <form className='form-subscribe mb-10x' action="">
-                  <input className='form-control' type="email" placeholder='Enter you email here' />
-                  <input className='form-submit' type="submit" value="Subscribe" />
-                </form> */}
-
-                <div className="">
+                <div className="mt-8 md:mt-0">
                   <p className='mb-4x fw-300'>Follow us at our socials</p>
                   <ul className='social-icons d-flex gap-6x'>
                     <li><a href="https://www.facebook.com/lftechnology?mibextid=LQQJ4d" target='_blank' rel="noopener noreferrer">
@@ -532,14 +486,9 @@ const Home = () => {
                     <li><a href="https://instagram.com/lftechnology?igshid=MzRlODBiNWFlZA==" target='_blank' rel="noopener noreferrer"> <i className="fa-brands fa-instagram"></i></a></li>
                   </ul>
                 </div>
-
-                <figure className='d-block d-md-none mt-10x hide-sm'>
-                  <img src={Logo} alt="Frogtoberfest Logo" />
+                <figure className='block md:hidden mt-10'>
+                  <img src={LogoWhite} alt="Frogtoberfest Logo" />
                 </figure>
-                <div className='mt-9x initiatives initiatives--mobile-view'>
-                  <p>Initiative of <a href='https://www.lftechnology.com/' target='_blank' rel="noopener noreferrer" className='text-primary'>Leapfrog Technology</a></p>
-                </div>
-
               </div>
             </div>
           </div>

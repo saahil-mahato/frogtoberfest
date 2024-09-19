@@ -9,7 +9,7 @@ const SiteTimer = () => {
     const [minute2Element, setMinute2Element] = useState(0)
     const SECOND_DAY = 86400
     const SECOND_HOUR = 3600
-    const lastDate = new Date('2023-10-01');
+    const lastDate = new Date('2024-10-01');
     const todayDate = new Date();
     const dif = Math.abs(lastDate - todayDate) / 1000;
 

@@ -13,22 +13,43 @@
 	background-color: transparent;
 	position: relative;
 	transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
-	font-family: $font-inter;
+
+	&.btn-primary {
+		background: $black;
+		color: $white;
+
+		&:hover {
+			background: getColor('white.base');
+			color: getColor('black.base');
+		}
+	}
+
+	&.btn-check {
+		background: #304810;
+		color: $white;
+
+		&:hover {
+			background: getColor('white.base');
+			color: getColor('black.base');
+		}
+	}
 
 	&.btn-link {
 		background: transparent;
-		color: getColor('white.base');
+		color: getColor('black.base');
+
 		&:hover {
 			background: getColor('grey.light');
 			color: getColor('white.base');
 		}
 	}
 
-	&.btn-outlined{
+	&.btn-outlined {
 		font-weight: 400;
-		border:1px solid transparent;
-		&:hover{
-			border-color: getColor('primary.base');
+		border: 1px solid transparent;
+
+		&:hover {
+			border-color: getColor('black.base');
 		}
 	}
 
@@ -45,6 +66,7 @@
 }
 
 
-.btn-facebook, .btn-twitter{
-	color:getColor('white.base');
+.btn-facebook,
+.btn-twitter {
+	color: getColor('white.base');
 }

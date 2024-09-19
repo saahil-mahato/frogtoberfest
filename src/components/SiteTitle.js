@@ -2,7 +2,7 @@ import React from 'react';
 
 // import frogtoberfestLogo from 'assets/images/frogtoberfest2022-logo.png';
 // import leapfrogOpenSourceLogo from 'assets/images/leapfrog-opensource-logo.png';
-import Img1 from 'assets/images/img-1.png';
+import Img1 from 'assets/images/logo-2024.png';
 
 const SiteTitle = () => (
   <div className="md:py-6 text-center bg-dark-black">

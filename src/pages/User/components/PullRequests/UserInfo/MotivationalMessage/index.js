@@ -11,7 +11,7 @@ const MotivationalMessage = ({ pullRequestCount, otherReposCount }) => {
     message = 'An error occured.';
   }
 
-  return <p className="font-small text-white-darker text-md m-3">{message}</p>;
+  return <p className="font-small text-black text-md m-3">{message}</p>;
 };
 
 MotivationalMessage.propTypes = {

@@ -6,15 +6,17 @@ const UsernameInput = ({ value, onChange }) => (
     type="text"
     name="username"
     aria-label="GitHub username"
-    placeholder="GitHub username"
+    placeholder="Search GitHub username"
     value={value}
     onChange={onChange}
     spellCheck="false"
     autoCapitalize="none"
     autoCorrect="off"
     autoComplete="off"
-    style={{ outline: 'none' }}
-    className="bn br--left leading-tight rounded-l flex-auto border-2 border-blue-lighter focus:border-blue-light border-r-0 text-grey-darkest"
+    style={{
+      outline: 'none', background: '#15171226', border: '1px solid #15171233'
+    }}
+    className="bn br--left leading-tight rounded-l flex-auto border-2"
   />
 );
 

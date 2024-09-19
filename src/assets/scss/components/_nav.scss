@@ -3,7 +3,7 @@
 		position: fixed;
 		width: 300px;
 		height: 100vh;
-		background-color: getColor('grey.base');
+		background-color: $primary;
 		overflow-x: hidden;
 		transition: right 0.3s;
 		top: 0;
@@ -16,10 +16,11 @@
 	}
 
 	@include e('link') {
-		color: getColor('white.base');
+		color: getColor('black.base');
+
 		&:hover,
 		&.active {
-			color: getColor('primary.base');
+			font-weight: 700;
 		}
 	}
 
@@ -43,7 +44,7 @@
 .bar {
 	width: 25px;
 	height: 3px;
-	background-color: getColor('white.base');
+	background-color: getColor('black.base');
 	margin: 3px 0;
 }
 
