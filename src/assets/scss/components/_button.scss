@@ -19,7 +19,7 @@
 		color: $white;
 
 		&:hover {
-			background: #43700A;
+			background: $buttonHover;
 			color: getColor('black.base');
 		}
 	}
@@ -29,7 +29,7 @@
 		color: $white;
 
 		&:hover {
-			background: #43700A;
+			background: $buttonHover;
 		}
 	}
 
