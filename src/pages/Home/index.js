@@ -118,7 +118,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className='text-center py-16x py-md-20x'>
+        <section className='text-center py-16x py-md-20x bg-black--base'>
           <div className="container">
             <h2 className='mb-14x'>WHAT YOU NEED TO KNOW</h2>
 
@@ -195,7 +195,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className='py-16x py-md-20x'>
+        <section className='py-16x py-md-20x bg-black--base'>
           <div className="container">
             <h2 className='mb-8x'>Past Stats</h2>
 
@@ -274,7 +274,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id='swag' className='py-16x py-md-20x'>
+        <section id='swag' className='py-16x py-md-20x bg-black--base'>
           <div className="container">
             <div className="max-w-665 mb-8x">
               <h2 className='mb-8x'>SWAG for you</h2>
@@ -456,7 +456,7 @@ const Home = () => {
         </section>
       </main >
 
-      <footer className='pt-16x pt-md-20x pb-10x bg-primary--dark'>
+      <footer className='pt-16x pt-md-20x pb-10x bg-black--base'>
         <div className="container">
           <div className="row gutter-x-md-11x">
             <div className="col-12 col-md-6 col-xl-7 mb-8x mb-md-0x">
