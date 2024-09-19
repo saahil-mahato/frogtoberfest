@@ -16,12 +16,12 @@
 		}
 
 		&:hover {
-			background-color: #9EE83F0D;
+			background-color: rgba(158, 232, 63, 0.05);
 		}
 
 		&.is-open {
 			padding-bottom: 10px;
-			background-color: #9EE83F0D;
+			background-color: rgba(158, 232, 63, 0.05);
 
 			.icon {
 				color: getColor('primary.base');
