@@ -8,7 +8,7 @@ import SiteHeader from 'components/SiteHeader';
 const Checker = () => (
   <Fragment>
     <SiteHeader />
-    <div className='banner banner--img-fixed'>
+    <div className='banner banner--img-fixed pt-24'>
       <SiteTitle>Frogtoberfest</SiteTitle>
       <div className="flex justify-center">
         <p className='text-black fw-700'>Stay tuned for Frogtoberfest 2024 !!</p>

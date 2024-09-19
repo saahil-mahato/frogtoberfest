@@ -1,5 +1,4 @@
 .btn {
-	padding: getSpacing('4x');
 	border: none;
 	font-size: rem(20);
 	cursor: pointer;
@@ -8,8 +7,8 @@
 	align-items: center;
 	justify-content: center;
 	font-weight: 600;
-
-	border-radius: 4px;
+	border-radius: 8px;
+	padding: 1rem 1.5rem;
 	background-color: transparent;
 	position: relative;
 	transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
@@ -20,16 +19,20 @@
 
 		&:hover {
 			background: $buttonHover;
-			color: getColor('black.base');
 		}
 	}
 
 	&.btn-check {
-		background: $black;
-		color: $white;
+		background: rgba(21, 23, 18, 0.20) !important;
+		padding-left: 24px;
+		border-radius: 8px 0 0 8px;
 
 		&:hover {
-			background: $buttonHover;
+			background: rgba(21, 23, 18, 0.13) !important;
+		}
+
+		&:focus-visible {
+			background: rgba(21, 23, 18, 0.10) !important;
 		}
 	}
 
@@ -39,7 +42,6 @@
 
 		&:hover {
 			background: #86C931;
-			color: getColor('white.base');
 		}
 	}
 
