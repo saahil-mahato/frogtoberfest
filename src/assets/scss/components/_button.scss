@@ -19,7 +19,7 @@
 		color: $white;
 
 		&:hover {
-			background: getColor('white.base');
+			background: #43700A;
 			color: getColor('black.base');
 		}
 	}
@@ -39,7 +39,7 @@
 		color: getColor('black.base');
 
 		&:hover {
-			background: getColor('grey.light');
+			background: #86C931;
 			color: getColor('white.base');
 		}
 	}

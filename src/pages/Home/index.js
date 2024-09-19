@@ -89,33 +89,36 @@ const Home = () => {
     <Fragment>
       <SiteHeader></SiteHeader>
       <main>
-        <section className="banner pt-10x text-center text-lg-left">
+        <section className="banner py-32 text-center text-lg-left">
           <div className="container">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between lg:items-center">
-              <div className="banner__image order-1 order-lg-2 pr-lg-25x ">
+              <div className="banner__image order-1 order-lg-2 flex-9 pr-lg-25x">
                 <img src={Img1} alt="Remaining Days" />
-
-
               </div>
-              <div className="order-2 order-lg-1">
+              <div className="order-2 order-lg-1 flex-1">
                 <h1 className='banner__title color-black--base fw-700 mb-6'>
                   Embracing Open Source
                 </h1>
-                <p className='mb-10x text-base color-black--base text-md-sm mx-auto mx-lg-0x banner_text fw-550'>A month-long challenge to encourage you to contribute to open source projects.</p>
+                <p className='mb-10x text-3xl text-black mx-auto mx-lg-0x fw-550'>
+                  A month-long challenge to encourage you to contribute to open source projects.
+                </p>
 
                 {/* <SiteTimer /> */}
 
                 <div className="d-flex gap-6x mt-6x m-lg-0x banner__buttons">
-                  <a className='text-black' href="https://frog.ly/frogtoberfest-2024" target='_blank' rel="noopener noreferrer"><button className='btn btn-primary'>Participate</button></a>
-                  <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer"><button className='btn btn-link color-black--base'>Leaderboard</button></a>
+                  <a className='text-black' href="https://frog.ly/frogtoberfest-2024" target='_blank' rel="noopener noreferrer">
+                    <button className='btn btn-primary'>Participate</button>
+                  </a>
+                  <a className='text-white' href="https://frogtoberfest-leaderboard.lftechnology.com/" target='_blank' rel="noopener noreferrer">
+                    <button className='btn btn-link text-black'>Leaderboard</button>
+                  </a>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
 
-        <section className='text-center py-16x py-md-20x bg-grey--base'>
+        <section className='text-center py-16x py-md-20x'>
           <div className="container">
             <h2 className='mb-14x'>WHAT YOU NEED TO KNOW</h2>
 
@@ -155,7 +158,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id='participation' className='py-16x py-md-34x'>
+        <section id='participation' className='py-16x py-md-34x bg-grey--base'>
           <div className="container">
             <h2 className='mb-8x'>Participation</h2>
             <p className='mb-6x'>The challenge is quite simple:</p>
@@ -192,7 +195,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className='py-16x py-md-20x bg-grey--base'>
+        <section className='py-16x py-md-20x'>
           <div className="container">
             <h2 className='mb-8x'>Past Stats</h2>
 
@@ -224,7 +227,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5 pl-lg-22x">Frogtoberfest had more participants from 2019 to this year, ensuring its
+              <div className="col-lg-5 pl-16 text-2xl">Frogtoberfest had more participants from 2019 to this year, ensuring its
                 continued
                 success
                 for the next decade.</div>
@@ -232,7 +235,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className='py-16x py-md-34x'>
+        <section className='py-16x py-md-34x bg-grey--base'>
           <div className="container">
             <h2 className='mb-8x'>Leaps & Bonds</h2>
             <p className='mb-14x text-lg max-w-985 lh-120'>Whether it&apos;s your first time or the umpteenth, join the conversation
@@ -271,7 +274,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id='swag' className='py-16x py-md-20x bg-grey--base'>
+        <section id='swag' className='py-16x py-md-20x'>
           <div className="container">
             <div className="max-w-665 mb-8x">
               <h2 className='mb-8x'>SWAG for you</h2>
@@ -314,7 +317,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id='faq' className='py-16x py-md-34x'>
+        <section id='faq' className='py-16x py-md-34x bg-grey--base'>
           <div className="container">
             <h2 className='mb-8x'>FAQs</h2>
 
@@ -451,7 +454,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-      </main>
+      </main >
 
       <footer className='pt-16x pt-md-20x pb-10x bg-primary--dark'>
         <div className="container">
