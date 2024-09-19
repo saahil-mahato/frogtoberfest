@@ -31,7 +31,7 @@ const SiteDetails = () => (
         </ul>
       </div>
     </div>
-  </div>
+  </div >
 );
 
 export default SiteDetails;

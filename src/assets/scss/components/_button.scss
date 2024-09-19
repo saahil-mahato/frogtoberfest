@@ -25,12 +25,11 @@
 	}
 
 	&.btn-check {
-		background: #304810;
+		background: $black;
 		color: $white;
 
 		&:hover {
-			background: getColor('white.base');
-			color: getColor('black.base');
+			background: #43700A;
 		}
 	}
 

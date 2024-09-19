@@ -33,7 +33,6 @@
     }
 
     @include e(commit) {
-        background-color: getColor('grey.20');
-
+        background: #FFFFFF33;
     }
 }
