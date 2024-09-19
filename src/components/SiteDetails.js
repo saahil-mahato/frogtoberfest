@@ -12,10 +12,10 @@ const checklistItems = [
  */
 const SiteDetails = () => (
   <div className="md:py-4 mb-6">
-    <div className="rounded mx-auto shadow w-3/4 sm:w-1/2 card card--bg-yellow">
+    <div className="rounded mx-auto shadow w-3/4 sm:w-1/2 checker-card">
       <div className="px-6 py-4">
         <div className="font-bold mb-4">
-          <p className="leading-normal text-lg mb-1 card__title">
+          <p className="leading-normal text-lg mb-1">
             Frogtoberfest is a spin-off of Hacktoberfest; a month-long Open Source contribution challenge for open
             source enthusiast.
           </p>
@@ -25,7 +25,7 @@ const SiteDetails = () => (
             <li className="flex leading-tight items-center mb-3" key={index}>
               <div className="circle">
               </div>
-              <span className="text-grey-darker text-m ml-2 card__text">{item}</span>
+              <span className="text-m ml-2">{item}</span>
             </li>
           ))}
         </ul>

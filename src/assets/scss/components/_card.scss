@@ -35,6 +35,14 @@
 	flex: 0 0 50%;
 }
 
+.checker-card {
+	color: $white;
+	background: linear-gradient(309.99deg, rgba(21, 23, 18, 0.6) -30.34%, rgba(21, 23, 18, 0.42) 99.87%);
+	border: 1px solid;
+	border-image-source: linear-gradient(280.47deg, rgba(48, 72, 16, 0.7) -6.26%, rgba(48, 72, 16, 0.3) 102.92%);
+	box-shadow: 0px 4px 4px 0px rgba(255, 228, 111, 0.25);
+}
+
 @media (min-width: 768px) {
 	.stat-cards {
 		flex-direction: column;

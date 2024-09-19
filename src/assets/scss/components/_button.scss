@@ -24,6 +24,16 @@
 		}
 	}
 
+	&.btn-check {
+		background: #304810;
+		color: $white;
+
+		&:hover {
+			background: getColor('white.base');
+			color: getColor('black.base');
+		}
+	}
+
 	&.btn-link {
 		background: transparent;
 		color: getColor('black.base');
