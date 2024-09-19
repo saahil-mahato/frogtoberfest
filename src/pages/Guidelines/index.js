@@ -4,7 +4,7 @@ import SiteHeader from 'components/SiteHeader';
 const Guidelines = () => (
   <Fragment>
     <SiteHeader />
-    <div className="container py-14x">
+    <div className="container py-14x text-black">
       <h2>Frogtoberfest Participation Guidelines</h2>
       <div>
         <div className="my-10x">
@@ -25,7 +25,7 @@ const Guidelines = () => (
             <span role="img" aria-label="Wrench" className="mr-2x">
               🔧
             </span>
-            <span>Meaningful code changes</span>
+            <span className='text-black'>Meaningful code changes</span>
           </h4>
           <p className="pt-5x">
             Contributions should focus on meaningful code changes, such as bug fixes, new features, or improvements,
@@ -37,7 +37,7 @@ const Guidelines = () => (
             <span role="img" aria-label="Orange books" className="mr-2x">
               📚
             </span>
-            <span>Documentation enhancements</span>
+            <span className='text-black'>Documentation enhancements</span>
           </h4>
           <p className="pt-5x">
             Encourage participants to contribute to project documentation, including updates, corrections, or
@@ -49,7 +49,7 @@ const Guidelines = () => (
             <span role="img" aria-label="Magnifying glass" className="mr-2x">
               🔍
             </span>
-            <span>Issue tracking</span>
+            <span className='text-black'>Issue tracking</span>
           </h4>
           <p className="pt-5x">
             Participants should prioritize issues or tasks listed in the project's issue tracker. This ensures alignment
@@ -61,7 +61,7 @@ const Guidelines = () => (
             <span role="img" aria-label="Light bulb" className="mr-2x">
               💡
             </span>
-            <span>Value-added contributions</span>
+            <span className='text-black'>Value-added contributions</span>
           </h4>
           <p className="pt-5x">
             Stress the importance of making contributions that provide clear value to the open-source project and its
@@ -73,7 +73,7 @@ const Guidelines = () => (
             <span role="img" aria-label="Glowing star" className="mr-2x">
               🌟
             </span>
-            <span>Quality over quantity</span>
+            <span className='text-black'>Quality over quantity</span>
           </h4>
           <p className="pt-5x">
             The emphasis on quality has resulted in participants submitting fewer, but more substantial, PRs. This
@@ -85,7 +85,7 @@ const Guidelines = () => (
             <span role="img" aria-label="Eye in speech bubble" className="mr-2x">
               👁️‍🗨️
             </span>
-            <span>Code review process</span>
+            <span className='text-black'>Code review process</span>
           </h4>
           <p className="pt-5x">
             The code review process will be conducted after the event's completion to maintain the quality of
