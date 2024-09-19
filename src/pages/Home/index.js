@@ -98,10 +98,10 @@ const Home = () => {
 
               </div>
               <div className="order-2 order-lg-1">
-                <h1 className='banner__title color-black--base fw-300 mb-6'>
+                <h1 className='banner__title color-black--base fw-700 mb-6'>
                   Embracing Open Source
                 </h1>
-                <p className='mb-10x text-base color-black--base text-md-sm mx-auto mx-lg-0x banner_text'>A month-long challenge to encourage you to contribute to open source projects.</p>
+                <p className='mb-10x text-base color-black--base text-md-sm mx-auto mx-lg-0x banner_text fw-550'>A month-long challenge to encourage you to contribute to open source projects.</p>
 
                 {/* <SiteTimer /> */}
 
