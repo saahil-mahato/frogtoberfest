@@ -283,7 +283,7 @@ const Home = () => {
                 exclusive merch and
                 ribbiting perks for all your contributions</p>
               <ul className='has-bullet'>
-                <li>Top 15 contributors receive exclusive Frogtoberfest SWAG.</li>
+                <li>Top 20 contributors receive exclusive Frogtoberfest SWAG.</li>
                 <li>All eligible participants receive a digital certificate of participation.</li>
                 <li>Get featured on Leapfrog&apos;s social media and newsletters</li>
               </ul>
@@ -416,7 +416,7 @@ const Home = () => {
                     <li>Ensure all PRs are valid.</li>
                   </ol>
 
-                  Note: The top 15 contributors who fulfill these requirements will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
+                  Note: The top 20 contributors who fulfill these requirements will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
                 </p>
               </div>
               <div className="accordion-content">
@@ -427,7 +427,7 @@ const Home = () => {
                   <i className="icon fa-solid fa-plus ml-auto"></i>
                 </header>
                 <p className="accordion-content-description mr-lg-15x">
-                  The top 15 contributors and 10 Leapfroggers in the leaderboard who fulfill the criteria will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
+                  The top 20 contributors in the leaderboard who fulfill the criteria will become eligible to receive the coveted Frogtoberfest SWAG as a token of recognition for their valuable contributions.
                 </p>
               </div>
               <div className="accordion-content">
