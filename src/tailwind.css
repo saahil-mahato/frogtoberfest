@@ -698,6 +698,10 @@ table {
   background-color: #22292f;
 }
 
+.bg-primary {
+  background-color: #9ee83f;
+}
+
 .bg-grey-darkest {
   background-color: #3d4852;
 }

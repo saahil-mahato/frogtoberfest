@@ -89,7 +89,7 @@ const Home = () => {
     <Fragment>
       <SiteHeader></SiteHeader>
       <main>
-        <section className="banner py-32 text-center text-lg-left">
+        <section className="banner py-20 text-center text-lg-left">
           <div className="container">
             <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between lg:items-center">
               <div className="banner__image order-1 order-lg-2 flex-9 pr-lg-25x pt-5 pb-5 md:p-0">
