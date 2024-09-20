@@ -698,6 +698,10 @@ table {
   background-color: #22292f;
 }
 
+.bg-primary {
+  background-color: #9ee83f;
+}
+
 .bg-grey-darkest {
   background-color: #3d4852;
 }
@@ -711,7 +715,7 @@ table {
 }
 
 .bg-grey-light-dark {
-  background-color: #393939;
+  background-color: #151712;
 }
 
 .bg-grey {

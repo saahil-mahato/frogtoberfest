@@ -39,7 +39,7 @@ const SiteHeader = () => {
 
     return (
         <Fragment>
-            <header className='header pt-6x pt-md-12x'>
+            <header className='header py-10 pt-md-12x bg-primary'>
                 <div className="container">
                     <div className="d-flex align-items-center justify-content-between">
 

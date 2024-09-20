@@ -13,10 +13,7 @@ const UsernameInput = ({ value, onChange }) => (
     autoCapitalize="none"
     autoCorrect="off"
     autoComplete="off"
-    style={{
-      outline: 'none', background: '#15171226', border: '1px solid #15171233', 'maxWidth': '600px'
-    }}
-    className="bn br--left leading-tight rounded-l flex-auto border-2 pt-2 pr-4 pb-2 pl-4 responsive-checker"
+    className="bn br--left leading-tight rounded-l flex-auto border-2 pt-2 pr-4 pb-2 pl-4 responsive-checker checker-input"
   />
 );
 
