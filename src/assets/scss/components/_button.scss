@@ -23,12 +23,13 @@
 	}
 
 	&.btn-check {
-		background: rgba(21, 23, 18, 0.20) !important;
+		color: $white;
+		background: #151712;
 		padding-left: 24px;
-		border-radius: 8px 0 0 8px;
+		border-radius: 0 8px 8px 0;
 
 		&:hover {
-			background: rgba(21, 23, 18, 0.13) !important;
+			background: $buttonHover;
 		}
 
 		&:focus-visible {
@@ -66,6 +67,23 @@
 	}
 }
 
+.checker-input {
+	outline: none;
+	border: none;
+	max-width: 600px;
+
+	background: rgba(21, 23, 18, 0.20) !important;
+	padding-left: 24px;
+	border-radius: 8px 0 0 8px;
+
+	&:hover {
+		background: rgba(21, 23, 18, 0.13) !important;
+	}
+
+	&:focus-visible {
+		background: rgba(21, 23, 18, 0.10) !important;
+	}
+}
 
 .btn-facebook,
 .btn-twitter {

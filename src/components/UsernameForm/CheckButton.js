@@ -7,7 +7,7 @@ const CheckButton = () => (
       outline: 'none'
       /* Tailwind's outline-none class doesn't remove default outlines */
     }}
-    className="btn btn-check border-radius-tbl-none"
+    className="btn btn-check"
   >
     Check
   </button>
